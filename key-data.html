@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/favicon.png" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="UBA CRM ">
+        <meta name="author" content="UBA">
+        <title>Global Account - CRM</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="py-5 bg-white">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden bg-slate-100">
+          
+          <div class="mobile-menu-bar">
+              <a href="" class="flex mr-auto">
+                  <img alt="UBA" class="w-6" src="dist/images/logo.png">
+              </a>
+              <a href="javascript:;" id="mobile-bar" class="openbtn" onclick="openNav()"> <i data-feather="bar-chart-2" class="w-8 h-8 text-primary transform -rotate-90"></i> </a>
+          </div>
+          <div id="mySidebar" class="sidebar">
+            <ul class="border-t border-white/[0.08] py-5">
+              <li>
+                <a href="./index.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="home"></i> </div>
+                    <div class="menu__title"> Dashboard </div>
+                </a>
+                
+            </li>
+            <li>
+                <a href="./global-account.html" class="menu menu--active">
+                    <div class="menu__icon"> <i data-feather="box"></i> </div>
+                    <div class="menu__title"> Global Account </div>
+                </a>
+            </li>
+            <li>
+                <a href="./client-engagement.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                    <div class="menu__title"> Client Engagement</div>
+                </a>
+            </li>
+            <li>
+                <a href="./risk-management.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="layout"></i> </div>
+                    <div class="menu__title">Risk Management </div>
+                </a>
+            </li>
+            <li>
+                <a href="./performance-management.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="inbox"></i> </div>
+                    <div class="menu__title">Performance Management </div>
+                </a>
+            </li>
+            <li>
+                <a href="./teams.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="sidebar"></i> </div>
+                    <div class="menu__title">Teams</div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="hard-drive"></i> </div>
+                    <div class="menu__title"> More <i data-feather="chevron-down" class="top-menu__sub-icon"></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="./audit.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Audit </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+          </div>
+      </div>
+        <!-- END: Mobile Menu -->
+        <!-- BEGIN: Top Bar -->
+        <div class="border-b border-black/[0.08] -mt-10 md:-mt-5 -mx-3 sm:-mx-8 px-3 sm:px-8 pt-3 md:pt-0 mb-10">
+            <div class="top-bar-boxed flex items-center">
+                <!-- BEGIN: Logo -->
+                <a href="" class="-intro-x hidden md:flex">
+                    <img alt="UBA" class="w-24" src="dist/images/UBA-Logoo.png">
+                    <!-- <span class="text-white text-lg ml-3">  </span>  -->
+                </a>
+                <!-- END: Logo -->
+                <!-- BEGIN: Breadcrumb -->
+                <nav aria-label="breadcrumb" class="-intro-x h-full mr-auto">
+                    <ol class="breadcrumb breadcrumb-main">
+                        <li class="breadcrumb-item"><a href="#">CRM</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Global Account</li>
+                    </ol>
+                </nav>
+                <!-- END: Breadcrumb -->
+                <!-- BEGIN: Search -->
+                <div class="intro-x relative mr-3 sm:mr-6">
+                    <div class="search hidden sm:block">
+                        <input type="text" class="search__input form-control border-transparent" placeholder="Search...">
+                        <i data-feather="search" class="search__icon dark:text-slate-500"></i> 
+                    </div>
+                    <a class="notification notification--light sm:hidden" href=""> <i data-feather="search" class="notification__icon dark:text-slate-500"></i> </a>
+                    <!-- <div class="search-result">
+                        <div class="search-result__content">
+                           
+                        </div>
+                    </div> -->
+                </div>
+                <!-- END: Search -->
+                <!-- BEGIN: Notifications -->
+                <div class="intro-x dropdown mr-4 sm:mr-6">
+                    <div class="dropdown-toggle notification notification--light notification--bullet cursor-pointer" role="button" aria-expanded="false" data-tw-toggle="dropdown"> <img src="/dist/images/Bell.png" alt=""> </div>
+                    <div class="notification-content pt-2 dropdown-menu">
+                        <div class="notification-content__box dropdown-content">
+                            <div class="notification-content__title">Notifications</div>
+                            <div class="cursor-pointer relative flex items-center ">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-1.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Johnny Depp</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-6.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Denzel Washington</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">03:20 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-13.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Denzel Washington</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-11.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Brad Pitt</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">06:05 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-11.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Christian Bale</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">05:09 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Notifications -->
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in scale-110" role="button" aria-expanded="false" data-tw-toggle="dropdown">
+                        <img alt="UBA" src="dist/images/profile-2.jpg">
+                    </div>
+                    <div class="dropdown-menu w-56">
+                        <ul class="dropdown-content bg-white before:block before:absolute before:rounded-md before:z-[-1] text-black">
+                            <li class="p-2">
+                                <div class="font-medium">Temitope Bello</div>
+                                <div class="text-xs text-gray-600/60 mt-0.5 dark:text-slate-500">CGAM Nigeria</div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-gray">
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Profile </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-gray">
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+        </div>
+        <!-- END: Top Bar -->
+        <!-- BEGIN: Top Menu -->
+        <nav class="top-nav">
+            <ul>
+                <li>
+                    <a href="./index.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="top-menu__title"> Dashboard </div>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="./global-account.html" class="top-menu top-menu--active">
+                        <div class="top-menu__icon"> <i data-feather="box"></i> </div>
+                        <div class="top-menu__title"> Global Account </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./client-engagement.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="top-menu__title"> Client Engagement</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./risk-management.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="layout"></i> </div>
+                        <div class="top-menu__title">Risk Management </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./performance-management.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="inbox"></i> </div>
+                        <div class="top-menu__title">Performance Management </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./teams.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="sidebar"></i> </div>
+                        <div class="top-menu__title">Teams</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="hard-drive"></i> </div>
+                        <div class="top-menu__title"> More <i data-feather="chevron-down" class="top-menu__sub-icon"></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="./audit.html" class="top-menu">
+                                <div class="top-menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="top-menu__title"> Audit </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- END: Top Menu -->
+        <!-- BEGIN: Content -->
+        <div class="content">
+            <div class="intro-y box p-5 mt-5">
+          <div class="grid grid-cols-12 gap-5 mt-5">
+            <div class="col-span-12 md:col-span-3 2xl:col-span-3 p-2">
+                <div class="px-5 py-10">
+                    <p class="text-xl font-bold mb-6">Add Account</p>
+
+                    <div class="intro-x flex items-center">
+                        <button class="w-10 h-10 rounded-full btn btn-primary">1</button>
+                        <div class="font-medium text-base ml-3">Company Information</div>
+                    </div>
+                    <div class="intro-x flex items-center mt-5">
+                        <button class="w-10 h-10 rounded-full btn btn-primary">2</button>
+                        <div class="font-medium text-base ml-3">Client Data</div>
+                    </div>
+                    <div class="intro-x flex items-center mt-5">
+                        <button class="w-10 h-10 rounded-full btn btn-primary">3</button>
+                        <div class="font-medium text-base ml-3">Key Data</div>
+                    </div>
+                    <div class="intro-x flex items-center mt-5">
+                        <button class="w-10 h-10 rounded-full btn text-slate-500 bg-slate-100 dark:bg-darkmode-400 dark:border-darkmode-400">4</button>
+                        <div class="text-base text-slate-600 dark:text-slate-500 ml-3">Geographical Presence</div>
+                    </div>
+                    <div class="intro-x flex items-center mt-5">
+                        <button class="w-10 h-10 rounded-full btn text-slate-500 bg-slate-100 dark:bg-darkmode-400 dark:border-darkmode-400">5</button>
+                        <div class="text-base text-slate-600 dark:text-slate-500 ml-3">Subsidiaries</div>
+                    </div>
+                    <div class="intro-x flex items-center mt-5">
+                        <button class="w-10 h-10 rounded-full btn text-slate-500 bg-slate-100 dark:bg-darkmode-400 dark:border-darkmode-400">6</button>
+                        <div class="text-base text-slate-600 dark:text-slate-500 ml-3">Upload Files</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-9 2xl:col-span-9 box p-2 cursor-pointer">
+                <div class="px-10 sm:px-5 lg:px-10 py-10 border-slate-200/60 dark:border-darkmode-400">
+                    <div class="font-medium text-base">Key Data</div>
+                    <p class="text-slate-400">All fields marked (<span class="text-primary">*</span>) are required</p>
+                    <div class="grid grid-cols-12 gap-4 gap-y-5 mt-5">
+                        <div class="intro-y col-span-12 sm:col-span-6 required">
+                            <label for="input-wizard-1" class="form-label control-label">First Name</label>
+                            <input id="" type="text" class="form-control" placeholder="Enter First Name">
+                        </div>
+                        <div class="intro-y col-span-12 sm:col-span-6 required">
+                            <label for="input-wizard-2" class="form-label control-label">Last Name</label>
+                            <input id="" type="text" class="form-control" placeholder="Enter Last Name">
+                        </div>
+                        <div class="intro-y col-span-12 sm:col-span-6 required">
+                            <label for="input-wizard-3" class="form-label control-label">Designation</label>
+                            <input id="" type="text" class="form-control" placeholder="Enter Designation">
+                        </div>
+                        <div class="intro-y col-span-12 sm:col-span-6 required">
+                            <label for="input-wizard-5" class="form-label control-label">Role</label>
+                            <select data-placeholder="Select Role" class="tom-select w-full">
+                                <option value="">select Role</option>
+                                <option value="1">Decison Maker</option>
+                                <option value="2">Recommender</option>
+                                <option value="3">Influencer</option>
+                                <option value="4">Champion</option>
+                                <option value="5">Other</option>
+                                
+                            </select>
+                        </div>
+                        <div class="intro-y col-span-12 sm:col-span-6 required">
+                            <label for="input-wizard-5" class="form-label control-label">Country</label>
+                            <select data-placeholder="Select" class="tom-select w-full">
+                                <option value="1">Select</option>
+                                <option value="2">Nigeria</option>
+                                <option value="3">Ghana</option>
+                                <option value="4">Cameroun</option>
+                                <option value="5">Burkina faso</option>
+                            </select>
+                        </div>
+                        <div class="intro-y col-span-12 sm:col-span-6 required">
+                            <label for="input-wizard-3" class="form-label control-label">Email</label>
+                            <input id="" type="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <div class="intro-y col-span-12 sm:col-span-6 required">
+                            <label for="input-wizard-5" class="form-label control-label">Current Engagement Level</label>
+                            <select data-placeholder="Select" class="tom-select w-full">
+                                <option value="1">Select</option>
+                                <option value="2">Unknown</option>
+                                <option value="3">Low</option>
+                                <option value="4">Average</option>
+                                <option value="5">High</option>
+                            </select>
+                        </div>
+                        <div class="intro-y col-span-12 sm:col-span-6 required">
+                            <label for="input-wizard-5" class="form-label control-label">Target Engagement Level</label>
+                            <select data-placeholder="Select" class="tom-select w-full">
+                                <option value="1">Select</option>
+                                <option value="2">Unknown</option>
+                                <option value="3">Low</option>
+                                <option value="4">Average</option>
+                                <option value="5">High</option>
+                            </select>
+                        </div>
+                        <div class="intro-y col-span-12 sm:col-span-6">
+                            <label for="input-wizard-2" class="form-label control-label">Mobile Number / Landline</label>
+                            <input id="" type="date" class="form-control" placeholder="Mobile Number">
+                        </div>
+                        <div class="intro-y col-span-12 sm:col-span-6">
+                            <label for="input-wizard-2" class="form-label control-label">Phone Number</label>
+                            <input id="" type="date" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="intro-y col-span-12 sm:col-span-6">
+                            <label for="input-wizard-2" class="form-label control-label">DOB</label>
+                            <input id="" type="date" class="form-control" placeholder="">
+                        </div>
+                        
+                        <div class="intro-y col-span-12 flex items-center justify-center sm:justify-end mt-5">
+                            <a href="./client-data.html" class="btn btn-secondary w-24">Previous</a>
+                            <a href="./geographical-presence.html" class="btn btn-primary ml-2">Save and Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+                
+            </div>
+      </div>
+        <!-- END: Content -->
+        <!-- BEGIN: Dark Mode Switcher-->
+        <!-- <div data-url="top-menu-dark-dashboard-overview-1.html" class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
+            <div class="mr-4 text-slate-600 dark:text-slate-200">Dark Mode</div>
+            <div class="dark-mode-switcher__toggle border"></div>
+        </div> -->
+        <!-- END: Dark Mode Switcher-->
+        
+        <!-- BEGIN: JS Assets-->
+        <script src="dist/js/app.js"></script>
+        <script src="./src/js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+        
+        <!-- END: JS Assets-->
+    </body>
+</html>

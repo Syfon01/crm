@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.display th,.display td,.display td .select-col{
+  font-size: 12px;
+}
+.display thead th {
+  padding: 3px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* width: 25vw; */
+  background: white;
+}
+.display thead .fixed-tab {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+.display tbody .fixed-tab {
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 1;
+  /* width: 250px!important; */
+}
+.select-col option[value="1"] {
+  background: #dc2626;
+  color: #fff;
+}
+
+.select-col option[value="2"] {
+  background: #facc15;
+  color: #fff;
+
+}
+
+.select-col option[value="3"] {
+  background: #84cc16;
+  color: #fff;
+
+}
+
+.select-col option[value="4"] {
+  background: #1e293b;
+  color: #fff;
+
+}
+
+.select-col{
+  padding:0.2rem 1.5rem 0.2rem 0.5rem!important;
+  border-radius: 5px;
+}
+.text-xss{
+  font-size: 10px;
+}
+table.dataTable.no-footer{
+  border-bottom: none;
+}
+.display.dataTable {
+  border: none;
+}
+
+.required .control-label:after {
+  content:"*";
+  color:#BC0303;
+}
+.input-group .select-pad{
+  padding:0.5rem 1.75rem 0.5rem 0.75rem;
+}
+.tom-select.multi .ts-input > div{
+  background-color: #dc2626!important;
+  color: #fff!important;
+}
+.mobile-menu .menu{
+  color: #4b5563!important;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+ ul li .menu.menu--active .menu__title{
+  color: #dc2626;
+  font-weight: 600;
+}
+ul li .menu.menu--active .menu__icon{
+  color: #dc2626;
+}
+.display.table-others th{
+  text-align: left;
+} 
+
+#subTable{
+  display: none;
+}

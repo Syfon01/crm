@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/favicon.png" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="UBA CRM ">
+        <meta name="author" content="UBA">
+        <title>Global Account - CRM</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="py-5 bg-white">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden bg-slate-100">
+          
+            <div class="mobile-menu-bar">
+                <a href="" class="flex mr-auto">
+                    <img alt="UBA" class="w-6" src="dist/images/logo.png">
+                </a>
+                <a href="javascript:;" id="mobile-bar" class="openbtn" onclick="openNav()"> <i data-feather="bar-chart-2" class="w-8 h-8 text-primary transform -rotate-90"></i> </a>
+            </div>
+            <div id="mySidebar" class="sidebar">
+              <ul class="border-t border-white/[0.08] py-5">
+                <li>
+                  <a href="./index.html" class="menu">
+                      <div class="menu__icon"> <i data-feather="home"></i> </div>
+                      <div class="menu__title"> Dashboard </div>
+                  </a>
+                  
+              </li>
+              <li>
+                  <a href="./global-account.html" class="menu menu--active">
+                      <div class="menu__icon"> <i data-feather="box"></i> </div>
+                      <div class="menu__title"> Global Account </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="./client-engagement.html" class="menu">
+                      <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                      <div class="menu__title"> Client Engagement</div>
+                  </a>
+              </li>
+              <li>
+                  <a href="./risk-management.html" class="menu">
+                      <div class="menu__icon"> <i data-feather="layout"></i> </div>
+                      <div class="menu__title">Risk Management </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="./performance-management.html" class="menu">
+                      <div class="menu__icon"> <i data-feather="inbox"></i> </div>
+                      <div class="menu__title">Performance Management </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="./teams.html" class="menu">
+                      <div class="menu__icon"> <i data-feather="sidebar"></i> </div>
+                      <div class="menu__title">Teams</div>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:;" class="menu">
+                      <div class="menu__icon"> <i data-feather="hard-drive"></i> </div>
+                      <div class="menu__title"> More <i data-feather="chevron-down" class="top-menu__sub-icon"></i> </div>
+                  </a>
+                  <ul class="">
+                      <li>
+                          <a href="./audit.html" class="menu">
+                              <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                              <div class="menu__title"> Audit </div>
+                          </a>
+                      </li>
+                  </ul>
+              </li>
+            </ul>
+            </div>
+        </div>
+        <!-- END: Mobile Menu -->
+        <!-- BEGIN: Top Bar -->
+        <div class="border-b border-black/[0.08] -mt-10 md:-mt-5 -mx-3 sm:-mx-8 px-3 sm:px-8 pt-3 md:pt-0 mb-10">
+            <div class="top-bar-boxed flex items-center">
+                <!-- BEGIN: Logo -->
+                <a href="" class="-intro-x hidden md:flex">
+                    <img alt="UBA" class="w-24" src="dist/images/UBA-Logoo.png">
+                    <!-- <span class="text-white text-lg ml-3">  </span>  -->
+                </a>
+                <!-- END: Logo -->
+                <!-- BEGIN: Breadcrumb -->
+                <nav aria-label="breadcrumb" class="-intro-x h-full mr-auto">
+                    <ol class="breadcrumb breadcrumb-main">
+                        <li class="breadcrumb-item"><a href="#">CRM</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Global Account</li>
+                    </ol>
+                </nav>
+                <!-- END: Breadcrumb -->
+                <!-- BEGIN: Search -->
+                <div class="intro-x relative mr-3 sm:mr-6">
+                    <div class="search hidden sm:block">
+                        <input type="text" class="search__input form-control border-transparent" placeholder="Search...">
+                        <i data-feather="search" class="search__icon dark:text-slate-500"></i> 
+                    </div>
+                    <a class="notification notification--light sm:hidden" href=""> <i data-feather="search" class="notification__icon dark:text-slate-500"></i> </a>
+                    <!-- <div class="search-result">
+                        <div class="search-result__content">
+                           
+                        </div>
+                    </div> -->
+                </div>
+                <!-- END: Search -->
+                <!-- BEGIN: Notifications -->
+                <div class="intro-x dropdown mr-4 sm:mr-6">
+                    <div class="dropdown-toggle notification notification--light notification--bullet cursor-pointer" role="button" aria-expanded="false" data-tw-toggle="dropdown"> <img src="/dist/images/Bell.png" alt=""> </div>
+                    <div class="notification-content pt-2 dropdown-menu">
+                        <div class="notification-content__box dropdown-content">
+                            <div class="notification-content__title">Notifications</div>
+                            <div class="cursor-pointer relative flex items-center ">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-1.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Johnny Depp</a> 
+                                        <div class="text-xs text-slate-400 ml-auto ">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-6.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Denzel Washington</a> 
+                                        <div class="text-xs text-slate-400 ml-auto ">03:20 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-13.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Denzel Washington</a> 
+                                        <div class="text-xs text-slate-400 ml-auto ">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-11.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Brad Pitt</a> 
+                                        <div class="text-xs text-slate-400 ml-auto ">06:05 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-11.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Christian Bale</a> 
+                                        <div class="text-xs text-slate-400 ml-auto ">05:09 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Notifications -->
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in scale-110" role="button" aria-expanded="false" data-tw-toggle="dropdown">
+                        <img alt="UBA" src="dist/images/profile-2.jpg">
+                    </div>
+                    <div class="dropdown-menu w-56">
+                        <ul class="dropdown-content bg-white before:block before:absolute before:rounded-md before:z-[-1] text-black">
+                            <li class="p-2">
+                                <div class="font-medium">Temitope Bello</div>
+                                <div class="text-xs text-gray-600/60 mt-0.5 dark:text-slate-500">CGAM Nigeria</div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-gray">
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Profile </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-gray">
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+        </div>
+        <!-- END: Top Bar -->
+        <!-- BEGIN: Top Menu -->
+        <nav class="top-nav">
+            <ul>
+                <li>
+                    <a href="./index.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="top-menu__title"> Dashboard </div>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="./global-account.html" class="top-menu top-menu--active">
+                        <div class="top-menu__icon"> <i data-feather="box"></i> </div>
+                        <div class="top-menu__title"> Global Account </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./client-engagement.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="top-menu__title"> Client Engagement</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./risk-management.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="layout"></i> </div>
+                        <div class="top-menu__title">Risk Management </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./performance-management.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="inbox"></i> </div>
+                        <div class="top-menu__title">Performance Management </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./teams.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="sidebar"></i> </div>
+                        <div class="top-menu__title">Teams</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="hard-drive"></i> </div>
+                        <div class="top-menu__title"> More <i data-feather="chevron-down" class="top-menu__sub-icon"></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="./audit.html" class="top-menu">
+                                <div class="top-menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="top-menu__title"> Audit </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- END: Top Menu -->
+        <!-- BEGIN: Content -->
+        <div class="content">
+          <div class="intro-y flex items-center mt-8">
+              <h1 class="text-xl font-medium mr-auto">
+                Company  Profile
+              </h1>
+          </div>
+          <div class="grid grid-cols-12 gap-6">
+              <!-- BEGIN: Profile Menu -->
+              <div class="col-span-12 lg:col-span-4 2xl:col-span-3 flex lg:block flex-col-reverse">
+                  <div class="intro-y box mt-5">
+                      <div class="relative flex items-center p-5">
+                          <div class="w-12 h-12 image-fit">
+                              <img alt="profile-photo" class="rounded-full" src="dist/images/profile-3.jpg">
+                          </div>
+                          <div class="ml-4 mr-auto">
+                              <div class="font-medium text-base">British Airways</div>
+                              <div class="text-slate-500">Travel  & Logistics</div>
+                          </div>
+                          <div class="dropdown">
+                              <a class="dropdown-toggle w-5 h-5 block" href="javascript:;" aria-expanded="false" data-tw-toggle="dropdown"> <i data-feather="more-horizontal" class="w-5 h-5 text-slate-500"></i> </a>
+                              <div class="dropdown-menu w-56">
+                                  <ul class="dropdown-content">
+                                      <li>
+                                          <h6 class="dropdown-header">
+                                              Export Options
+                                          </h6>
+                                      </li>
+                                      <li>
+                                          <hr class="dropdown-divider">
+                                      </li>
+                                      <li>
+                                          <a href="" class="dropdown-item"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> English </a>
+                                      </li>
+                                      <li>
+                                          <a href="" class="dropdown-item">
+                                              <i data-feather="box" class="w-4 h-4 mr-2"></i> Indonesia 
+                                              <div class="text-xs text-white px-1 rounded-full bg-danger ml-auto">10</div>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="" class="dropdown-item"> <i data-feather="layout" class="w-4 h-4 mr-2"></i> English </a>
+                                      </li>
+                                      <li>
+                                          <a href="" class="dropdown-item"> <i data-feather="sidebar" class="w-4 h-4 mr-2"></i> Indonesia </a>
+                                      </li>
+                                      <li>
+                                          <hr class="dropdown-divider">
+                                      </li>
+                                      <li>
+                                          <div class="flex p-1">
+                                              <button type="button" class="btn btn-primary py-1 px-2">Settings</button>
+                                              <button type="button" class="btn btn-secondary py-1 px-2 ml-auto">View Profile</button>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="p-8 border-t border-slate-200/60 dark:border-darkmode-400">
+                          <a class="flex items-center text-primary font-medium" href=""> <i data-feather="user" class="w-4 h-4 mr-2"></i> Account Information </a>
+                          <a class="flex items-center mt-5" href="./account-plans.html"> <i data-feather="box" class="w-4 h-4 mr-2"></i> Account Plans </a>
+                          <a class="flex items-center mt-5" href="./account-attachments.html"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Attachments </a>
+                      </div>
+                     
+                      <div class="p-8 border-t border-slate-200/60 dark:border-darkmode-400 flex">
+                        <a href="./add-global.html" class="btn btn-primary shadow-md ml-auto"><i class="w-4 h-4 text-white font-bold mr-2" data-feather="plus"></i>  Add Global Account</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- END: Profile Menu -->
+              <div class="col-span-12 lg:col-span-8 2xl:col-span-9">
+                  <div class="intro-y box lg:mt-5">
+                    <div class="flex items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
+                        <h2 class="font-medium text-base mr-auto">
+                            Overview
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-12 gap-5">
+                        <div class="col-span-12 sm:col-span-4 lg:col-span-4 2xl:col-span-4  p-5 cursor-pointer zoom-in">
+                            <div class="text-slate-500">Total Turnover</div>
+                            <div class="font-semibold text-base text-xl">$25,498,036</div>
+                        </div>
+                        
+                        <div class="col-span-12 sm:col-span-4 lg:col-span-4 2xl:col-span-4  p-5 cursor-pointer zoom-in">
+                            <div class="text-slate-500">UBA Average SOB</div>
+                            <div class="font-semibold text-base text-xl">$2,498,036</div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-4 lg:col-span-4 2xl:col-span-4  p-5 cursor-pointer zoom-in">
+                            <div class="text-slate-500">Credit Exposure</div>
+                            <div class="font-semibold text-base text-xl">$5,498,036</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                  <div class="intro-y box lg:mt-5">
+                      <div class="flex items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
+                          <h2 class="font-medium text-base mr-auto">
+                              Account Information
+                          </h2>
+                      </div>
+                      <div class="p-8">
+                          <div class="flex flex-col-reverse xl:flex-row flex-col">
+                              <div class="flex-1 mt-6 xl:mt-0">
+                                  <div class="grid grid-cols-12 gap-x-5">
+                                      <div class="col-span-12">
+                                        <div class="grid grid-cols-12 gap-x-5">
+                                            <div class="col-span-12 xl:col-span-6">
+                                                <div >
+                                                    <label for="update-profile-form-7" class="form-label">Name</label>
+                                                    <input id="update-profile-form-7" type="text" class="form-control" placeholder="Input text" value="British Airways" disabled>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <label for="update-profile-form-6" class="form-label">Email</label>
+                                                    <input id="update-profile-form-6" type="text" class="form-control" placeholder="Input text" value="british.airways@gmail.com">
+                                                </div>
+                                                
+                                                <div class="mt-3">
+                                                    <label for="update-profile-form-8" class="form-label">Website</label>
+                                                    <input id="update-profile-form-9" type="text" class="form-control" placeholder="Input text" value="www.exmaple.com">
+                                                </div>
+                                                <div class="mt-3">
+                                                    <label for="update-profile-form-9" class="form-label">Industry</label>
+                                                    <input id="update-profile-form-9" type="text" class="form-control" placeholder="Input text" value="Travels">
+                                                </div>
+                                            </div>
+                                            <div class="col-span-12 xl:col-span-6">
+                                                <div class="mt-3 xl:mt-0">
+                                                    <label for="update-profile-form-10" class="form-label">Phone Number</label>
+                                                    <input id="update-profile-form-10" type="text" class="form-control" placeholder="Input text" value="+23465570828">
+                                                </div>
+                                                <div class="mt-3">
+                                                    <label for="update-profile-form-11" class="form-label">Parent Country/Africa Regional Office</label>
+                                                    <input id="update-profile-form-11" type="text" class="form-control" placeholder="Input text" value="UK">
+                                                </div>
+                                                <div class="mt-3">
+                                                    <label for="update-profile-form-12" class="form-label">GCUID</label>
+                                                    <input id="update-profile-form-11" type="text" class="form-control" placeholder="Input text" value="-">
+                                                </div>
+                                                <div class="mt-3">
+                                                    <label for="update-profile-form-13" class="form-label">Major Shareholders</label>
+                                                    <input id="update-profile-form-13" type="text" class="form-control" placeholder="Input text" value="Isreali">
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-span-12">
+                                          <div class="mt-3">
+                                              <label for="update-profile-form-5" class="form-label">Address</label>
+                                              <textarea id="update-profile-form-5" class="form-control" placeholder="Adress">10 Anson Road, International Plaza, #10-11, 079903 Singapore, Singapore</textarea>
+                                          </div>
+                                      </div>
+                                      <div class="col-span-12">
+                                        <div class="mt-3">
+                                            <label for="update-profile-form-5" class="form-label">Other Remarks</label>
+                                            <textarea id="update-profile-form-5" class="form-control" placeholder="NA"></textarea>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div>
+                                  <button type="button" class="btn btn-primary w-24 mt-3 float-right">Save</button>
+                                  </div>
+                              </div>
+                              <div class="w-40 mx-auto xl:mr-0 xl:ml-6">
+                                  <div class="border-2 border-dashed shadow-sm border-slate-200/60 dark:border-darkmode-400 rounded-md p-5">
+                                      <div class="h-28 relative image-fit cursor-pointer zoom-in mx-auto">
+                                          <img class="rounded-md" alt="profile-photo" src="dist/images/profile-3.jpg">
+                                          <div title="Remove this profile photo?" class="tooltip w-5 h-5 flex items-center justify-center absolute rounded-full text-white bg-danger right-0 top-0 -mr-2 -mt-2"> <i data-feather="x" class="w-4 h-4"></i> </div>
+                                      </div>
+                                      <div class="mx-auto cursor-pointer relative mt-5">
+                                          <button type="button" class="btn btn-primary w-full">Change Photo</button>
+                                          <input type="file" class="w-full h-full top-0 left-0 absolute opacity-0">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="intro-y box mt-5">
+                    <div class="flex items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
+                        <h2 class="font-medium text-base mr-auto">
+                            Account Plans
+                        </h2>
+                    </div>
+                    <div class="p-8">
+                        <div class="overflow-x"> 
+                            <table class="table table-sm table-striped"> 
+                                <thead class="table-dark"> 
+                                    <tr> 
+                                        <th class="">X-Geographical Presence</th>
+                                         <th class="">Client Plan Available?</th> 
+                                         <th class="">Existing UBA Relationship?</th> 
+                                         <th class="">Subsidiary Present</th> 
+                                         <th class="">Relationship Managers</th> 
+                                    </tr> 
+                                </thead> 
+                                <tbody> 
+                                    <tr> 
+                                        <td class="">Nigeria</td> 
+                                        <td class="">Yes</td> 
+                                        <td class="">Yes</td> 
+                                        <td class="">2</td> 
+                                        <td class="">Sola Yomi-Ajayi</td> 
+                                    </tr>
+                                    <tr> 
+                                        <td class="">Nigeria</td> 
+                                        <td class="">Yes</td> 
+                                        <td class="">Yes</td> 
+                                        <td class="">2</td> 
+                                        <td class="">Sola Yomi-Ajayi</td> 
+                                    </tr>
+                                    <tr> 
+                                        <td class="">Nigeria</td> 
+                                        <td class="">Yes</td> 
+                                        <td class="">Yes</td> 
+                                        <td class="">2</td> 
+                                        <td class="">Sola Yomi-Ajayi</td> 
+                                    </tr>
+                                </tbody>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+                  <div class="intro-y box mt-5">
+                      <div class="flex items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
+                          <h2 class="font-medium text-base mr-auto">
+                              Client Data
+                          </h2>
+                      </div>
+                      <div class="p-8">
+                          <div class="grid grid-cols-12 gap-x-5">
+                              <div class="col-span-12 xl:col-span-6">
+                                  <div>
+                                      <label for="update-profile-form-6" class="form-label">Earnings(N'bn)</label>
+                                      <input id="update-profile-form-6" type="text" class="form-control" placeholder="Input text" value="No data available">
+                                  </div>
+                                  <div class="mt-3">
+                                      <label for="update-profile-form-7" class="form-label">EBITDA(N'bn)</label>
+                                      <input id="update-profile-form-6" type="text" class="form-control" placeholder="Input text" value="No data available">
+
+                                  </div>
+                                  <div class="mt-3">
+                                      <label for="update-profile-form-8" class="form-label">EBIT(N'bn)</label>
+                                      <input id="update-profile-form-6" type="text" class="form-control" placeholder="Input text" value="No data available">
+
+                                  </div>
+                                  <div class="mt-3">
+                                      <label for="update-profile-form-9" class="form-label">PBT(N'bn)</label>
+                                      <input id="update-profile-form-6" type="text" class="form-control" placeholder="Input text" value="No data available">
+                                  </div>
+                                  <div class="mt-3">
+                                      <label for="update-profile-form-9" class="form-label">Share Price</label>
+                                      <input id="update-profile-form-6" type="text" class="form-control" placeholder="Input text" value="No data available">
+                                  </div>
+                              </div>
+                              <div class="col-span-12 xl:col-span-6">
+                                  <div class="mt-3 xl:mt-0">
+                                      <label for="update-profile-form-10" class="form-label">PAT(N'bn)</label>
+                                      <input id="update-profile-form-6" type="text" class="form-control" placeholder="Input text" value="No data available">
+                                  </div>
+                                  <div class="mt-3">
+                                      <label for="update-profile-form-11" class="form-label">Total Debt(N'bn)</label>
+                                      <input id="update-profile-form-6" type="text" class="form-control" placeholder="Input text" value="No data available">
+
+                                  </div>
+                                  <div class="mt-3">
+                                      <label for="update-profile-form-12" class="form-label">ROE(%)</label>
+                                      <input id="update-profile-form-6" type="text" class="form-control" placeholder="Input text" value="No data available">
+
+                                  </div>
+                                  <div class="mt-3">
+                                      <label for="update-profile-form-13" class="form-label">Capitalization</label>
+                                      <input id="update-profile-form-6" type="text" class="form-control" placeholder="Input text" value="No data available">
+                                  </div>
+                                  <div class="mt-3">
+                                    <label for="update-profile-form-13" class="form-label">P/E</label>
+                                    <input id="update-profile-form-6" type="text" class="form-control" placeholder="Input text" value="No data available">
+                                </div>
+                              </div>
+                          </div>
+                          <div class="flex justify-content-end mt-4">
+                              <button type="button" class="btn btn-primary w-24 ml-auto">Save</button>
+                          </div>
+                      </div>
+                  </div>
+
+                <div class="intro-y box mt-5">
+                    <div class="flex items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
+                        <h2 class="font-medium text-base mr-auto">
+                            Key Contacts
+                        </h2>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid grid-cols-12 gap-x-5">
+                            <div class="col-span-12 xl:col-span-6">
+                                <div class="relative flex">
+                                    <div class="w-12 h-12 image-fit">
+                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-3.jpg">
+                                    </div>
+                                    <div class="ml-4 mr-auto">
+                                        <p class="font-medium text-base">Temitope Ugege <span class="text-slate-500 font-normal text-sm">(Nigeria)</span></p>
+                                        <p class="text-slate-500">MD, Decision Maker</p>
+
+                                        <div class="mt-3">
+                                            <div class="flex">
+                                                <a href="tel:+234-909-6789" class="text-primary">
+                                                    <div class="flex">
+                                                        <i data-feather="phone" class="text-sm"></i> 
+                                                        <p class="ml-1 text-lg">Call</p>
+                                                    </div>
+                                                </a>
+                                                <a href="mailto:axy@gmail.com" class="text-primary">
+                                                    <div class="flex ml-5">
+                                                        <i data-feather="mail" class="text-sm"></i> 
+                                                        <p class="ml-1 text-lg">Send email</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-12 xl:col-span-6">
+                                <div class="relative flex">
+                                    <div class="w-12 h-12 image-fit">
+                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-3.jpg">
+                                    </div>
+                                    <div class="ml-4 mr-auto">
+                                        <p class="font-medium text-base">Temitope Ugege <span class="text-slate-500 font-normal text-sm">(Nigeria)</span></p>
+                                        <p class="text-slate-500">MD, Decision Maker</p>
+                                        <div class="mt-3">
+                                            <div class="flex">
+                                                <a href="tel:+234-909-6789" class="text-primary">
+                                                    <div class="flex">
+                                                        <i data-feather="phone" class="text-sm"></i> 
+                                                        <p class="ml-1 text-lg">Call</p>
+                                                    </div>
+                                                </a>
+                                                <a href="mailto:axy@gmail.com" class="text-primary">
+                                                    <div class="flex ml-5">
+                                                        <i data-feather="mail" class="text-sm"></i> 
+                                                        <p class="ml-1 text-lg">Send email</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="intro-y box mt-5">
+                    <div class="flex items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
+                        <h2 class="font-medium text-base mr-auto">
+                            GAM Team
+                        </h2>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid grid-cols-12 gap-x-5">
+                            <div class="col-span-12 xl:col-span-6">
+                                <div class="relative flex">
+                                    <div class="w-12 h-12 image-fit">
+                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-3.jpg">
+                                    </div>
+                                    <div class="ml-4 mr-auto">
+                                        <p class="font-medium text-base">Lene Herbert <span class="text-slate-500 font-normal text-sm">(Nigeria)</span></p>
+                                        <p class="text-slate-500">GAM</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-12 xl:col-span-6">
+                                <div class="relative flex">
+                                    <div class="w-12 h-12 image-fit">
+                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-3.jpg">
+                                    </div>
+                                    <div class="ml-4 mr-auto">
+                                        <p class="font-medium text-base">Gafar Dennis <span class="text-slate-500 font-normal text-sm">(Russia)</span></p>
+                                        <p class="text-slate-500">CGAM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                  <!-- END: Personal Information -->
+              </div>
+          </div>
+      </div>
+        <!-- END: Content -->
+        <!-- BEGIN: Dark Mode Switcher-->
+        <!-- <div data-url="top-menu-dark-dashboard-overview-1.html" class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
+            <div class="mr-4 text-slate-600 dark:text-slate-200">Dark Mode</div>
+            <div class="dark-mode-switcher__toggle border"></div>
+        </div> -->
+        <!-- END: Dark Mode Switcher-->
+        
+        <!-- BEGIN: JS Assets-->
+        <script src="dist/js/app.js"></script>
+        <script src="./src/js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+        <script>
+            $(document).ready( function () {
+                $('.display').DataTable({
+                "info":false,
+                "responsive": true,
+                // "aoColumnDefs": [{
+                //     "bSortable": false,
+                //     "aTargets": [-1]
+                // }],
+                "searching": false,
+                "lengthChange": false,
+                "bInfo": false,
+                "bPaginate":false,
+                });
+            });
+        </script>
+        <!-- END: JS Assets-->
+    </body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/favicon.png" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="UBA CRM ">
+        <meta name="author" content="UBA">
+        <title>Dashboard - CRM</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="py-5 bg-white">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden bg-slate-100">
+          
+            <div class="mobile-menu-bar">
+                <a href="" class="flex mr-auto">
+                    <img alt="UBA" class="w-6" src="dist/images/logo.png">
+                </a>
+                <a href="javascript:;" id="mobile-bar" class="openbtn" onclick="openNav()"> <i data-feather="bar-chart-2" class="w-8 h-8 text-primary transform -rotate-90"></i> </a>
+            </div>
+            <div id="mySidebar" class="sidebar">
+              <ul class="border-t border-white/[0.08] py-5">
+                <li>
+                  <a href="./index.html" class="menu menu--active">
+                      <div class="menu__icon"> <i data-feather="home"></i> </div>
+                      <div class="menu__title"> Dashboard </div>
+                  </a>
+                  
+              </li>
+              <li>
+                  <a href="./global-account.html" class="menu">
+                      <div class="menu__icon"> <i data-feather="box"></i> </div>
+                      <div class="menu__title"> Global Account </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="./client-engagement.html" class="menu">
+                      <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                      <div class="menu__title"> Client Engagement</div>
+                  </a>
+              </li>
+              <li>
+                  <a href="./risk-management.html" class="menu">
+                      <div class="menu__icon"> <i data-feather="layout"></i> </div>
+                      <div class="menu__title">Risk Management </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="./performance-management.html" class="menu">
+                      <div class="menu__icon"> <i data-feather="inbox"></i> </div>
+                      <div class="menu__title">Performance Management </div>
+                  </a>
+              </li>
+              <li>
+                  <a href="./teams.html" class="menu">
+                      <div class="menu__icon"> <i data-feather="sidebar"></i> </div>
+                      <div class="menu__title">Teams</div>
+                  </a>
+              </li>
+              <li>
+                  <a href="javascript:;" class="menu">
+                      <div class="menu__icon"> <i data-feather="hard-drive"></i> </div>
+                      <div class="menu__title"> More <i data-feather="chevron-down" class="top-menu__sub-icon"></i> </div>
+                  </a>
+                  <ul class="">
+                      <li>
+                          <a href="./audit.html" class="menu">
+                              <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                              <div class="menu__title"> Audit </div>
+                          </a>
+                      </li>
+                  </ul>
+              </li>
+            </ul>
+            </div>
+        </div>
+        <!-- END: Mobile Menu -->
+        <!-- BEGIN: Top Bar -->
+        <div class="border-b border-black/[0.08] -mt-10 md:-mt-5 -mx-3 sm:-mx-8 px-3 sm:px-8 pt-3 md:pt-0 mb-10">
+            <div class="top-bar-boxed flex items-center">
+                <!-- BEGIN: Logo -->
+                <a href="" class="-intro-x hidden md:flex">
+                    <img alt="UBA" class="w-24" src="dist/images/UBA-Logoo.png">
+                    <!-- <span class="text-white text-lg ml-3">  </span>  -->
+                </a>
+                <!-- END: Logo -->
+                <!-- BEGIN: Breadcrumb -->
+                <nav aria-label="breadcrumb" class="-intro-x h-full mr-auto">
+                    <ol class="breadcrumb breadcrumb-main">
+                        <li class="breadcrumb-item"><a href="#">CRM</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                    </ol>
+                </nav>
+                <!-- END: Breadcrumb -->
+                <!-- BEGIN: Search -->
+                <div class="intro-x relative mr-3 sm:mr-6">
+                    <div class="search hidden sm:block">
+                        <input type="text" class="search__input form-control border-transparent" placeholder="Search...">
+                        <i data-feather="search" class="search__icon dark:text-slate-500"></i> 
+                    </div>
+                    <a class="notification notification--light sm:hidden" href=""> <i data-feather="search" class="notification__icon dark:text-slate-500"></i> </a>
+                    <!-- <div class="search-result">
+                        <div class="search-result__content">
+                           
+                        </div>
+                    </div> -->
+                </div>
+                <!-- END: Search -->
+                <!-- BEGIN: Notifications -->
+                <div class="intro-x dropdown mr-4 sm:mr-6">
+                    <div class="dropdown-toggle notification notification--light notification--bullet cursor-pointer" role="button" aria-expanded="false" data-tw-toggle="dropdown"> <img src="/dist/images/Bell.png" alt=""> </div>
+                    <div class="notification-content pt-2 dropdown-menu">
+                        <div class="notification-content__box dropdown-content">
+                            <div class="notification-content__title">Notifications</div>
+                            <div class="cursor-pointer relative flex items-center ">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-1.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Johnny Depp</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-6.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Denzel Washington</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">03:20 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-13.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Denzel Washington</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-11.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Brad Pitt</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">06:05 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit mr-1">
+                                    <img alt="UBA" class="rounded-full" src="dist/images/profile-11.jpg">
+                                    <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="ml-2 overflow-hidden">
+                                    <div class="flex items-center justify-between">
+                                        <a href="javascript:;" class="font-medium truncate mr-5">Christian Bale</a> 
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">05:09 AM</div>
+                                    </div>
+                                    <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Notifications -->
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in scale-110" role="button" aria-expanded="false" data-tw-toggle="dropdown">
+                        <img alt="UBA" src="dist/images/profile-2.jpg">
+                    </div>
+                    <div class="dropdown-menu w-56">
+                        <ul class="dropdown-content bg-white before:block before:absolute before:rounded-md before:z-[-1] text-black">
+                            <li class="p-2">
+                                <div class="font-medium">Temitope Bello</div>
+                                <div class="text-xs text-gray-600/60 mt-0.5 dark:text-slate-500">CGAM Nigeria</div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-gray">
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Profile </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Help </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider border-gray">
+                            </li>
+                            <li>
+                                <a href="" class="dropdown-item hover:bg-white/5"> <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+        </div>
+        <!-- END: Top Bar -->
+        <!-- BEGIN: Top Menu -->
+        <nav class="top-nav">
+            <ul>
+                <li>
+                    <a href="./index.html" class="top-menu top-menu--active">
+                        <div class="top-menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="top-menu__title"> Dashboard </div>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="./global-account.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="box"></i> </div>
+                        <div class="top-menu__title"> Global Account </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./client-engagement.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="activity"></i> </div>
+                        <div class="top-menu__title"> Client Engagement</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./risk-management.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="layout"></i> </div>
+                        <div class="top-menu__title">Risk Management </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./performance-management.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="inbox"></i> </div>
+                        <div class="top-menu__title">Performance Management </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./teams.html" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="sidebar"></i> </div>
+                        <div class="top-menu__title">Teams</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="top-menu">
+                        <div class="top-menu__icon"> <i data-feather="hard-drive"></i> </div>
+                        <div class="top-menu__title"> More <i data-feather="chevron-down" class="top-menu__sub-icon"></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="./audit.html" class="top-menu">
+                                <div class="top-menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="top-menu__title"> Audit </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- END: Top Menu -->
+        <!-- BEGIN: Content -->
+        <div class="content">
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 2xl:col-span-9 xl:col-span-9">
+                    <div class="grid grid-cols-12 gap-6">
+                        <!-- BEGIN: General Report -->
+                        <div class="col-span-12 lg:col-span-8 mt-8">
+                            <div class="py-2 flex items-center h-10">
+                                <h2 class="text-lg font-medium truncate mr-5">
+                                    Account Summary
+                                </h2>
+                               <p class="text-gray-600 truncate mb-0 ml-auto flex items-center ">12 February, 2022</p>
+
+                            </div>
+                            <div class="grid grid-cols-12 gap-x-6 mt-5">
+                                <div class="col-span-12 sm:col-span-12  lg:col-span-6 intro-y mb-8">
+                                    <div class="report-box zoom-in">
+                                        <div class="box p-5">
+                                            <div class="flex">
+                                                <i data-feather="shopping-cart" class="report-box__icon text-primary"></i> 
+                                                <div class="ml-auto">
+                                                    <div class="report-box__indicator bg-primary tooltip cursor-pointer" title="33% Higher than last month"> 33% <i data-feather="chevron-up" class="w-4 h-4 ml-0.5"></i> </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-3xl font-medium leading-8 mt-6">471</div>
+                                            <div class="text-base text-slate-500 mt-1">No Relationship (NR)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-12  lg:col-span-6 intro-y mb-8">
+                                    <div class="report-box zoom-in">
+                                        <div class="box p-5">
+                                            <div class="flex">
+                                                <i data-feather="credit-card" class="report-box__icon text-warning"></i> 
+                                                <div class="ml-auto">
+                                                    <div class="report-box__indicator bg-warning tooltip cursor-pointer" title="2% Lower than last month"> 2% <i data-feather="chevron-down" class="w-4 h-4 ml-0.5"></i> </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-3xl font-medium leading-8 mt-6">272</div>
+                                            <div class="text-base text-slate-500 mt-1">Passive Relationship (PR)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-12  lg:col-span-6 intro-y mb-8">
+                                    <div class="report-box zoom-in">
+                                        <div class="box p-5">
+                                            <div class="flex">
+                                                <i data-feather="monitor" class="report-box__icon text-success"></i> 
+                                                <div class="ml-auto">
+                                                    <div class="report-box__indicator bg-success tooltip cursor-pointer" title="12% Higher than last month"> 12% <i data-feather="chevron-up" class="w-4 h-4 ml-0.5"></i> </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-3xl font-medium leading-8 mt-6">356</div>
+                                            <div class="text-base text-slate-500 mt-1">Active Relationship (AR)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-12  lg:col-span-6 intro-y mb-8">
+                                    <div class="report-box zoom-in">
+                                        <div class="box p-5">
+                                            <div class="flex">
+                                                <i data-feather="user" class="report-box__icon text-dark"></i> 
+                                                <div class="ml-auto">
+                                                    <div class="report-box__indicator bg-dark tooltip cursor-pointer" title="22% Higher than last month"> 22% <i data-feather="chevron-up" class="w-4 h-4 ml-0.5"></i> </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-3xl font-medium leading-8 mt-6">152</div>
+                                            <div class="text-base text-slate-500 mt-1">Entity Not Present (ENP)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 mt-8">
+                            <div class="intro-y block justify-between flex items-center h-10">
+                                <h2 class="text-lg font-medium truncate mr-5">
+                                    Overview
+                                </h2>
+                                <div class="sm:ml-auto mt-3 sm:mt-0 mb-5 lg:mb-0 relative text-slate-500 text-sm ">
+                                    <i data-feather="calendar" class="w-4 h-4 z-10 absolute my-auto inset-y-0 ml-3 left-0"></i> 
+                                    <input type="text" class="datepicker form-control sm:w-48 box pl-10">
+                                </div>
+                            </div>
+                            <div class="intro-y box p-5 mt-5">
+                                <canvas class="mt-3" id="report-pie-chart" height="210"></canvas>
+                                <div class="mt-8 grid grid-cols-12 gap-6">
+                                    <div class="col-span-6 sm:col-span-6 xl:col-span-6 intro-y">
+                                        <div class="flex items-center justify-between">
+                                            <div class="w-3 h-3 bg-primary rounded mr-2"></div>
+                                            <span class="truncate">NR</span> <span class="font-medium xl:ml-auto">42%</span> 
+                                        </div>
+                                    </div>
+                                    <div class="col-span-6 sm:col-span-6 xl:col-span-6 intro-y">
+                                        <div class="flex items-center justify-between">
+                                            <div class="w-3 h-3 bg-warning rounded mr-2"></div>
+                                            <span class="truncate">PR</span> <span class="font-medium xl:ml-auto">23%</span> 
+                                        </div>
+                                    </div>
+
+                                    <div class="col-span-6 sm:col-span-6 xl:col-span-6 intro-y">
+                                        <div class="flex items-center justify-between">
+                                            <div class="w-3 h-3 bg-success rounded mr-2"></div>
+                                            <span class="truncate">AR</span> <span class="font-medium xl:ml-auto">33%</span> 
+                                        </div>
+                                    </div>
+                                    <div class="col-span-6 sm:col-span-6 xl:col-span-6 intro-y">
+                                        <div class="flex items-center justify-between">
+                                            <div class="w-3 h-3 bg-dark rounded mr-2"></div>
+                                            <span class="truncate">ENP</span> <span class="font-medium xl:ml-auto">10%</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END: General Report -->
+
+                    </div>
+                </div>
+                <div class="col-span-12 2xl:col-span-3 xl:col-span-3">
+                    <div class="xl:border-l -mb-10">
+                        <div class="xl:pl-6 grid grid-cols-12">
+                            <!-- BEGIN: Recent Activities -->
+                            <div class="col-span-12 md:col-span-12 xl:col-span-12 2xl:col-span-12 mt-8">
+                                <div class="intro-x flex items-center h-10">
+                                    <h2 class="text-lg font-medium truncate mr-5">
+                                        Recent Activities
+                                    </h2>
+                                    <a href="" class="ml-auto text-primary truncate">Show More</a> 
+                                </div>
+                                <div class="mt-5 relative before:block before:absolute before:w-px before:h-[85%] before:bg-slate-200 before:dark:bg-darkmode-400 before:ml-5 before:mt-5">
+                                    <div class="intro-x relative flex items-center mb-2">
+                                        <div class="before:block before:absolute before:w-20 before:h-px before:bg-slate-200 before:dark:bg-darkmode-400 before:mt-5 before:ml-5">
+                                            <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                <img alt="UBA" src="dist/images/profile-3.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="box px-5 py-2.5 ml-4 flex-1 zoom-in">
+                                            <div class="flex items-center justify-between">
+                                                <div class="font-medium">Johnny Depp</div>
+                                                <div class="text-xs text-slate-500 ml-auto">Feb. 10</div>
+                                            </div>
+                                            <div class="text-slate-500 mt-1">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                    </div>
+                                    <div class="intro-x relative flex items-center mb-2">
+                                        <div class="before:block before:absolute before:w-20 before:h-px before:bg-slate-200 before:dark:bg-darkmode-400 before:mt-5 before:ml-5">
+                                            <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                <img alt="UBA" src="dist/images/profile-15.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="box px-5 py-2.5 ml-4 flex-1 zoom-in">
+                                            <div class="flex items-center justify-between">
+                                                <div class="font-medium">Christian Bale</div>
+                                                <div class="text-xs text-slate-500 ml-auto">Feb. 10</div>
+                                            </div>
+                                            <div class="text-slate-500">
+                                                <div class="mt-1">Lorem ipsum dolor sit amet.</div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="intro-x relative flex items-center mb-2">
+                                        <div class="before:block before:absolute before:w-20 before:h-px before:bg-slate-200 before:dark:bg-darkmode-400 before:mt-5 before:ml-5">
+                                            <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                <img alt="UBA" src="dist/images/profile-12.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="box px-5 py-2.5 ml-4 flex-1 zoom-in">
+                                            <div class="flex items-center justify-between">
+                                                <div class="font-medium">Brad Pitt</div>
+                                                <div class="text-xs text-slate-500 ml-auto">Feb. 10</div>
+                                            </div>
+                                            <div class="text-slate-500 mt-1">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                    </div>
+                                    <div class="intro-x relative flex items-center mb-2">
+                                        <div class="before:block before:absolute before:w-20 before:h-px before:bg-slate-200 before:dark:bg-darkmode-400 before:mt-5 before:ml-5">
+                                            <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                <img alt="UBA" src="dist/images/profile-4.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="box px-5 py-2.5 ml-4 flex-1 zoom-in">
+                                            <div class="flex items-center justify-between">
+                                                <div class="font-medium">John Travolta</div>
+                                                <div class="text-xs text-slate-500 ml-auto">Feb. 10</div>
+                                            </div>
+                                            <div class="text-slate-500 mt-1">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                    </div>
+                                    <div class="intro-x relative flex items-center">
+                                        <div class="before:block before:absolute before:w-20 before:h-px before:bg-slate-200 before:dark:bg-darkmode-400 before:mt-5 before:ml-5">
+                                            <div class="w-10 h-10 flex-none image-fit rounded-full overflow-hidden">
+                                                <img alt="UBA" src="dist/images/profile-4.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="box px-5 py-2.5 ml-4 flex-1 zoom-in">
+                                            <div class="flex items-center justify-between">
+                                                <div class="font-medium">John Travolta</div>
+                                                <div class="text-xs text-slate-500 ml-auto">Feb. 10</div>
+                                            </div>
+                                            <div class="text-slate-500 mt-1">Lorem ipsum dolor sit amet.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END: Recent Activities -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="box p-5 mt-16">
+                    <h2 class="text-lg font-medium">
+                        Global Account Presence
+                    </h2>
+                    <canvas id="vertical-bar-chart-widget" height="130"></canvas> 
+                </div>
+            </div>
+        </div>
+        <!-- END: Content -->
+        <!-- BEGIN: Dark Mode Switcher-->
+        <!-- <div data-url="top-menu-dark-dashboard-overview-1.html" class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
+            <div class="mr-4 text-slate-600 dark:text-slate-200">Dark Mode</div>
+            <div class="dark-mode-switcher__toggle border"></div>
+        </div> -->
+        <!-- END: Dark Mode Switcher-->
+        
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <script src="dist/js/app.js"></script>
+        <script src="./src/js/main.js"></script>
+        <!-- END: JS Assets-->
+    </body>
+</html>
