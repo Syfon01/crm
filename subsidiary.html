@@ -302,7 +302,7 @@
                     </div>
                     <div class="intro-x flex items-center mt-5">
                         <button class="w-10 h-10 rounded-full btn btn-primary">3</button>
-                        <div class="font-medium text-base ml-3">Key Data</div>
+                        <div class="font-medium text-base ml-3">Key Contact</div>
                     </div>
                     <div class="intro-x flex items-center mt-5">
                         <button class="w-10 h-10 rounded-full btn btn-primary">4</button>
@@ -356,6 +356,7 @@
                               <thead>
                                   <tr>
                                       <th class="">Name</th>
+                                      <th>Location</th>
                                       <th>Volume of Business (&#8358;'Bn)</th>
                                       <th >UBA SOB(%)</th>
                                       <th >RM</th>
@@ -367,6 +368,7 @@
                                       <td class="">
                                         Bristish Document
                                       </td>
+                                      <td class="">Ghana</td>
                                       <td class="">2000000</td>
                                       <td class="">15</td>
                                       <td class="">UBA Chad</td>
@@ -392,32 +394,56 @@
             </div>
                 
             </div> 
-             <!-- BEGIN: New Order Modal -->
+             <!-- Subsidiary Modal -->
              <div id="addSubsidiary" class="modal" tabindex="-1" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                       <div class="modal-header">
                           <h2 class="font-medium text-base mr-auto">
-                              New Order
+                              Add A Subsidiary
                           </h2>
                       </div>
                       <div class="modal-body grid grid-cols-12 gap-4 gap-y-3">
-                          <div class="col-span-12">
-                              <label for="pos-form-1" class="form-label">Name</label>
-                              <input id="pos-form-1" type="text" class="form-control flex-1" placeholder="Customer name">
+                          <div class="col-span-12 md:col-span-6">
+                              <label for="pos-form-1" class="form-label">Subsidiary Name</label>
+                              <input id="pos-form-1" type="text" class="form-control flex-1" placeholder="">
                           </div>
-                          <div class="col-span-12">
-                              <label for="pos-form-2" class="form-label">Table</label>
-                              <input id="pos-form-2" type="text" class="form-control flex-1" placeholder="Customer table">
+                          <div class="col-span-12 md:col-span-6">
+                              <label for="pos-form-2" class="form-label">Location</label>
+                              <select id="" class="form-select">
+                                <option selected>Select Location</option>
+                                <option>Ghana</option>
+                                <option>Nigeria</option>
+                                <option>Ukraine</option>
+                                <option>Russia</option>
+                            </select>
                           </div>
-                          <div class="col-span-12">
-                              <label for="pos-form-3" class="form-label">Number of People</label>
-                              <input id="pos-form-3" type="text" class="form-control flex-1" placeholder="People">
+                          <div class="col-span-12 md:col-span-6">
+                              <label for="pos-form-3" class="form-label">Volume of Business</label>
+                              <div class="input-group">
+                                <div id="" class="input-group-text">&#8358;'m</div>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="">
+                              </div>
                           </div>
+                          <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">UBA SOB</label>
+                            <div class="input-group">
+                                <div id="" class="input-group-text">%</div>
+                              <input type="text" class="form-control" placeholder="example.com" aria-label="Email" aria-describedby="input-group-email">
+                            </div>
+                          </div>
+                          <div class="col-span-12 md:col-span-6">
+                            <label for="" class="form-label">RM/Branch</label>
+                            <input  type="text" class="form-control flex-1" placeholder="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-2" class="form-label">Company Logo</label>
+                            <input type="file" class="mt-2">
+                        </div>
                       </div>
                       <div class="modal-footer text-right">
-                          <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-32 mr-1">Cancel</button>
-                          <button type="button" class="btn btn-primary w-32">Create Ticket</button>
+                          <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-28 mr-1">Cancel</button>
+                          <button type="button" class="btn btn-primary w-28">Save</button>
                       </div>
                   </div>
               </div>

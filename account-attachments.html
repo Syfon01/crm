@@ -293,11 +293,11 @@
           </div>
           <div class="grid grid-cols-12 gap-6">
               <!-- BEGIN: Profile Menu -->
-              <div class="col-span-12 lg:col-span-4 2xl:col-span-3 flex lg:block flex-col-reverse">
+              <div class="col-span-12 lg:col-span-3 2xl:col-span-3 flex lg:block flex-col-reverse">
                   <div class="intro-y box mt-5">
                       <div class="relative flex items-center p-5">
                           <div class="w-12 h-12 image-fit">
-                              <img alt="profile-photo" class="rounded-full" src="dist/images/profile-3.jpg">
+                              <img alt="profile-photo" class="rounded-full" src="dist/images/profile-1.jpg">
                           </div>
                           <div class="ml-4 mr-auto">
                               <div class="font-medium text-base">British Airways</div>
@@ -355,57 +355,27 @@
                   </div>
               </div>
               <!-- END: Profile Menu -->
-              <div class="col-span-12 lg:col-span-8 2xl:col-span-9">
+              <div class="col-span-12 lg:col-span-9 2xl:col-span-9">
                 <div class="intro-y box mt-5">
                   <div class="flex justify-between items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
                     <div>
                       <h2 class="font-medium text-base mr-auto">
                         Attachments
                     </h2>
-                    <p class="text-sm text-slate-500">See all attachments pertaining to a global account</p>
+                    <p class="text-sm text-slate-500">See all documents pertaining to a global account</p>
                     </div>
                     
                     <div class="border-t border-slate-200/60 dark:border-darkmode-400 flex">
-                      <a href="" class="btn btn-primary shadow-md ml-auto"><i class="w-4 h-4 text-white font-bold mr-2" data-feather="plus"></i>  Add New Attachments</a>
+                      <button class="btn btn-primary shadow-md ml-auto" data-tw-toggle="modal" data-tw-target="#addModal"><i class="w-4 h-4 text-white font-bold mr-2" data-feather="plus"></i>  Add New Attachments</button>
                     </div>
                 </div>
-                  <div class="p-8">
-                    <div class="flex flex-col sm:flex-row sm:items-end xl:items-start">
-                      <form id="tabulator-html-filter-form" class="xl:flex sm:mr-auto" >
-                         
-                          <div class="sm:flex items-center sm:mr-4 mt-2 xl:mt-0">
-                              <label class="w-12 flex-none xl:w-auto xl:flex-initial mr-2">Search</label>
-                              <input id="tabulator-html-filter-value" type="text" class="form-control sm:w-40 2xl:w-full mt-2 sm:mt-0" placeholder="">
-                          </div>
-                    </form>
-                      <div class="flex mt-5 sm:mt-0">
-                          <button id="tabulator-print" class="btn btn-outline-secondary w-1/2 sm:w-auto mr-2"> <i data-feather="printer" class="w-4 h-4 mr-2"></i> Print </button>
-                          <div class="dropdown w-1/2 sm:w-auto">
-                              <button class="dropdown-toggle btn btn-outline-secondary w-full sm:w-auto" aria-expanded="false" data-tw-toggle="dropdown"> <i data-feather="file-text" class="w-4 h-4 mr-2"></i> Export <i data-feather="chevron-down" class="w-4 h-4 ml-auto sm:ml-2"></i> </button>
-                              <div class="dropdown-menu w-40">
-                                  <ul class="dropdown-content">
-                                      <li>
-                                          <a id="tabulator-export-csv" href="javascript:;" class="dropdown-item"> <i data-feather="file-text" class="w-4 h-4 mr-2"></i> Export CSV </a>
-                                      </li>
-                                      <li>
-                                          <a id="tabulator-export-json" href="javascript:;" class="dropdown-item"> <i data-feather="file-text" class="w-4 h-4 mr-2"></i> Export JSON </a>
-                                      </li>
-                                      <li>
-                                          <a id="tabulator-export-xlsx" href="javascript:;" class="dropdown-item"> <i data-feather="file-text" class="w-4 h-4 mr-2"></i> Export XLSX </a>
-                                      </li>
-                                      <li>
-                                          <a id="tabulator-export-html" href="javascript:;" class="dropdown-item"> <i data-feather="file-text" class="w-4 h-4 mr-2"></i> Export HTML </a>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="overflow-x-auto scrollbar-hidden py-5">
+                  <div class="px-8 py-3">
+                  <div class="overflow-x-auto scrollbar-hidden pb-3">
                     <table id="table_id" class="display table-others">
                         <thead>
                             <tr>
                                 <th class="">Document Title</th>
+                                <th>Country</th>
                                 <th>Type</th>
                                 <th >Date Uploaded</th>
                                 <th></th>
@@ -416,42 +386,14 @@
                                 <td class="">
                                   Bristish Document
                                 </td>
+                                <td class="">Nigeria</td>
                                 <td class="">Financial</td>
                                 <td class="">03 December 2021</td>
                                 <td class="text-center ">
-                                  <button class="btn btn-sm btn-outline-primary">Download</button>
+                                  <button class="btn btn-sm btn-outline-primary">Preview</button>
                                 </td>
                             </tr>
-                            <tr>
-                              <td class="">
-                                Bristish Document
-                              </td>
-                              <td class="">Credit</td>
-                              <td class="">03 December 2021</td>
-                              <td class="text-center ">
-                                <button class="btn btn-sm btn-outline-primary">Download</button>
-                              </td>
-                          </tr>
-                          <tr>
-                            <td class="">
-                              Bristish Document
-                            </td>
-                            <td class="">others</td>
-                            <td class="">03 December 2021</td>
-                            <td class="text-center ">
-                              <button class="btn btn-sm btn-outline-primary">Download</button>
-                            </td>
-                        </tr>
-                        <tr>
-                          <td class="">
-                            Bristish Document
-                          </td>
-                          <td class="">others</td>
-                          <td class="">03 December 2021</td>
-                          <td class="text-center ">
-                            <button class="btn btn-sm btn-outline-primary">Download</button>
-                          </td>
-                      </tr>
+                            
                             
                         </tbody>
                     </table>
@@ -462,6 +404,71 @@
                   <!-- END: Personal Information -->
               </div>
           </div>
+          
+          <!-- modal  -->
+          <div id="addModal" class="modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header pt-5">
+                        <h2 class="text-lg text-base font-medium">Add Attachment</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="intro-y col-span-12">
+                                <label for="input-wizard-5" class="form-label control-label">Document Title</label>
+                               <input type="text" class="form-control" placeholder="Enter File name">
+                            </div>
+
+                            <div class="intro-y col-span-12 mt-5">
+                                <label for="input-wizard-5" class="form-label control-label">Country</label>
+                                <select id="" class="form-select">
+                                    <option selected>Select Company</option>
+                                    <option>Ghana</option>
+                                    <option>Nigeria</option>
+                                    <option>Ukraine</option>
+                                    <option>Russia</option>
+                                </select>
+                            </div>
+
+                            <div class="intro-y col-span-12 mt-5">
+                                <label for="input-wizard-5" class="form-label control-label">Upload</label>
+                                <div data-single="true" action="/file-upload" class="dropzone col-span-12"> 
+                                    <div class="fallback"> 
+                                      <input name="file" type="file" /> 
+                                    </div> 
+                                    <div class="dz-message my-3" data-dz-message> 
+                                      <a href="" class="w-24 file__icon file__icon--image mx-auto block">
+                                        <div class="file__icon--image__preview">
+                                            <img alt="" src="./src/images/upload.svg" class="w-8 h-8">
+                                        </div>
+                                    </a>
+            
+                                      <div class="text-slate-700 mt-2">Drop files here or click to upload.</div> 
+                                    </div> 
+                                  </div> 
+                            </div>
+
+                            <div class="intro-y col-span-12 mt-5">
+                                <label for="input-wizard-5" class="form-label control-label">Document Type</label>
+                                <select id="" class="form-select">
+                                    <option selected>Select Document Type</option>
+                                    <option>Financial</option>
+                                    <option>KYC</option>
+                                    <option>Presentation</option>
+                                    <option>Credit Documentation</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+                           
+                        </form>
+                    </div>
+                    <div class="modal-footer text-right">
+                        <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-28 mr-1">Cancel</button>
+                        <button type="button" class="btn btn-primary w-32">Upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
         <!-- END: Content -->
         <!-- BEGIN: Dark Mode Switcher-->

@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="UBA CRM ">
         <meta name="author" content="UBA">
-        <title>Global Account - CRM</title>
+        <title>Client Engagement - CRM</title>
         <!-- BEGIN: CSS Assets-->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
         <link rel="stylesheet" href="dist/css/app.css" />
@@ -35,13 +35,13 @@
                   
               </li>
               <li>
-                  <a href="./global-account.html" class="menu menu--active">
+                  <a href="./global-account.html" class="menu">
                       <div class="menu__icon"> <i data-feather="box"></i> </div>
                       <div class="menu__title"> Global Account </div>
                   </a>
               </li>
               <li>
-                  <a href="./client-engagement.html" class="menu">
+                  <a href="./client-engagement.html" class="menu menu--active">
                       <div class="menu__icon"> <i data-feather="activity"></i> </div>
                       <div class="menu__title"> Client Engagement</div>
                   </a>
@@ -95,7 +95,7 @@
                 <nav aria-label="breadcrumb" class="-intro-x h-full mr-auto">
                     <ol class="breadcrumb breadcrumb-main">
                         <li class="breadcrumb-item"><a href="#">CRM</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Global Account</li>
+                        <li class="breadcrumb-item active" aria-current="page">Client Engagement</li>
                     </ol>
                 </nav>
                 <!-- END: Breadcrumb -->
@@ -238,13 +238,13 @@
                     
                 </li>
                 <li>
-                    <a href="./global-account.html" class="top-menu top-menu--active">
+                    <a href="./global-account.html" class="top-menu">
                         <div class="top-menu__icon"> <i data-feather="box"></i> </div>
                         <div class="top-menu__title"> Global Account </div>
                     </a>
                 </li>
                 <li>
-                    <a href="./client-engagement.html" class="top-menu">
+                    <a href="./client-engagement.html" class="top-menu top-menu--active">
                         <div class="top-menu__icon"> <i data-feather="activity"></i> </div>
                         <div class="top-menu__title"> Client Engagement</div>
                     </a>
@@ -286,133 +286,311 @@
         <!-- END: Top Menu -->
         <!-- BEGIN: Content -->
         <div class="content">
-            <div class="intro-y box p-5 mt-5">
-          <div class="grid grid-cols-12 gap-5 mt-5">
-            <div class="col-span-12 md:col-span-3 2xl:col-span-3 p-2">
-                <div class="px-5 py-10">
-                    <p class="text-xl font-bold mb-6">Add Account</p>
-
-                    <div class="intro-x flex items-center">
-                        <button class="w-10 h-10 rounded-full btn btn-primary">1</button>
-                        <div class="font-medium text-base ml-3">Company Information</div>
-                    </div>
-                    <div class="intro-x flex items-center mt-5">
-                        <button class="w-10 h-10 rounded-full btn btn-primary">2</button>
-                        <div class="font-medium text-base ml-3">Client Data</div>
-                    </div>
-                    <div class="intro-x flex items-center mt-5">
-                        <button class="w-10 h-10 rounded-full btn text-slate-500 bg-slate-100 dark:bg-darkmode-400 dark:border-darkmode-400">3</button>
-                        <div class="text-base text-slate-600 dark:text-slate-500 ml-3">Key Contact</div>
-                    </div>
-                    <div class="intro-x flex items-center mt-5">
-                        <button class="w-10 h-10 rounded-full btn text-slate-500 bg-slate-100 dark:bg-darkmode-400 dark:border-darkmode-400">4</button>
-                        <div class="text-base text-slate-600 dark:text-slate-500 ml-3">Geographical Presence</div>
-                    </div>
-                    <div class="intro-x flex items-center mt-5">
-                        <button class="w-10 h-10 rounded-full btn text-slate-500 bg-slate-100 dark:bg-darkmode-400 dark:border-darkmode-400">5</button>
-                        <div class="text-base text-slate-600 dark:text-slate-500 ml-3">Subsidiaries</div>
-                    </div>
-                    <div class="intro-x flex items-center mt-5">
-                        <button class="w-10 h-10 rounded-full btn text-slate-500 bg-slate-100 dark:bg-darkmode-400 dark:border-darkmode-400">6</button>
-                        <div class="text-base text-slate-600 dark:text-slate-500 ml-3">Upload Files</div>
-                    </div>
-                </div>
+          <div class="intro-y flex flex-col sm:flex-row justify-between items-center mt-8">
+            <div>
+              <h2 class="text-lg font-medium mr-auto">
+                Clients Engagement
+              </h2>
             </div>
-            <div class="col-span-12 md:col-span-9 2xl:col-span-9 box p-2 cursor-pointer">
-                <div class="px-10 sm:px-5 lg:px-10 py-10 border-slate-200/60 dark:border-darkmode-400">
-                    <div class="font-medium text-base">Client Data</div>
-                    <p class="text-slate-400">All fields marked (<span class="text-primary">*</span>) are required</p>
-                    <div class="grid grid-cols-12 gap-4 gap-y-5 mt-5">
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-5" class="form-label control-label">Currency</label>
-                            <select data-placeholder="Select" class="tom-select w-full">
-                                <option value="1">Select</option>
-                                <option value="2">Naira</option>
-                                <option value="3">Dollars</option>
-                                <option value="4">Pounds</option>
+            
+            
+        </div>
+       
+          <div class="grid grid-cols-12 gap-6">
+              <!-- BEGIN: Profile Menu -->
+              <div class="col-span-12 lg:col-span-3 2xl:col-span-3 flex lg:block flex-col-reverse">
+                  <div class="intro-y box mt-5">
+                      <div class="relative flex items-center p-5">
+                          <div class="w-12 h-12 image-fit">
+                              <img alt="profile-photo" class="rounded-full" src="dist/images/profile-1.jpg">
+                          </div>
+                          <div class="ml-4 mr-auto">
+                              <div class="font-medium text-base">British Airways</div>
+                              <div class="text-slate-500">Travel  & Logistics</div>
+                          </div>
+                          <div class="dropdown">
+                              <a class="dropdown-toggle w-5 h-5 block" href="javascript:;" aria-expanded="false" data-tw-toggle="dropdown"> <i data-feather="more-horizontal" class="w-5 h-5 text-slate-500"></i> </a>
+                              <div class="dropdown-menu w-56">
+                                  <ul class="dropdown-content">
+                                      <li>
+                                          <h6 class="dropdown-header">
+                                              Export Options
+                                          </h6>
+                                      </li>
+                                      <li>
+                                          <hr class="dropdown-divider">
+                                      </li>
+                                      <li>
+                                          <a href="" class="dropdown-item"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> English </a>
+                                      </li>
+                                      <li>
+                                          <a href="" class="dropdown-item">
+                                              <i data-feather="box" class="w-4 h-4 mr-2"></i> Indonesia 
+                                              <div class="text-xs text-white px-1 rounded-full bg-danger ml-auto">10</div>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="" class="dropdown-item"> <i data-feather="layout" class="w-4 h-4 mr-2"></i> English </a>
+                                      </li>
+                                      <li>
+                                          <a href="" class="dropdown-item"> <i data-feather="sidebar" class="w-4 h-4 mr-2"></i> Indonesia </a>
+                                      </li>
+                                      <li>
+                                          <hr class="dropdown-divider">
+                                      </li>
+                                      <li>
+                                          <div class="flex p-1">
+                                              <button type="button" class="btn btn-primary py-1 px-2">Settings</button>
+                                              <button type="button" class="btn btn-secondary py-1 px-2 ml-auto">View Profile</button>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="p-8 border-t border-slate-200/60 dark:border-darkmode-400">
+                          <a class="flex items-center" href="./view-clients.html"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Activities </a>
+                          <a class="flex items-center mt-5 text-primary font-medium" href="./calling-plans.html"> <i data-feather="box" class="w-4 h-4 mr-2"></i> Calling Plans </a>
+                          <a class="flex items-center mt-5" href="./calling-matrix.html"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Calling Matrix </a>
+                      </div>
+                     
+                      <!-- <div class="p-8 border-t border-slate-200/60 dark:border-darkmode-400 flex">
+                        <a href="./add-global.html" class="btn btn-primary shadow-md ml-auto"><i class="w-4 h-4 text-white font-bold mr-2" data-feather="plus"></i>  Add Global Account</a>
+                      </div> -->
+                  </div>
+              </div>
+              <!-- END: Profile Menu -->
+              <div class="col-span-12 lg:col-span-9 2xl:col-span-9">
+                <div class="intro-y box lg:mt-5">
+                  <div class="flex items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
+                      <h2 class="font-medium text-base mr-auto">
+                          Calling Summary
+                      </h2>
+                  </div>
+                  <div class="grid grid-cols-12 gap-5">
+                      <div class="col-span-12 sm:col-span-3 lg:col-span-3 2xl:col-span-3  p-5 cursor-pointer zoom-in">
+                          <div class="text-slate-500">Total Calls</div>
+                          <div class="font-semibold text-base text-xl">0</div>
+                      </div>
+                      
+                      <div class="col-span-12 sm:col-span-3 lg:col-span-3 2xl:col-span-3  p-5 cursor-pointer zoom-in">
+                          <div class="text-slate-500">Completed</div>
+                          <div class="font-semibold text-base text-xl">0</div>
+                      </div>
+                      <div class="col-span-12 sm:col-span-3 lg:col-span-3 2xl:col-span-3  p-5 cursor-pointer zoom-in">
+                          <div class="text-slate-500">Work in progress</div>
+                          <div class="font-semibold text-base text-xl">0</div>
+                      </div>
+                      <div class="col-span-12 sm:col-span-3 lg:col-span-3 2xl:col-span-3  p-5 cursor-pointer zoom-in">
+                        <div class="text-slate-500">Outstanding</div>
+                        <div class="font-semibold text-base text-xl">0</div>
+                    </div>
+                      
+                  </div>
+              </div>
+
+                  <div class="intro-y box lg:mt-5">
+                    <div class="py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
+                      <div>
+                        <h2 class="text-lg font-medium mr-auto">
+                          Plans
+                        </h2>
+                        <p class="text-sm text-slate-500">Records of all your calling plans.</p>
+
+                      </div>
+                      <div class="intro-y mt-5">
+                        <div class="overflow-x"> 
+                          <table class="table display tab-table"> 
+                              <thead class=""> 
+                                  <tr> 
+                                      <th class="">Client Contact</th>
+                                       <th class="">UBA Responsibility</th> 
+                                       <th class="">Status</th> 
+                                       <th class="">Date</th> 
+                                       <th class=""></th> 
+                                  </tr> 
+                              </thead> 
+                              <tbody> 
+                                  <tr> 
+                                      <td class="">
+                                        David Bassey  <br>
+                                        <span class="text-xs text-slate-500"> Decision Maker </span>
+                                      </td> 
+                                      <td class="">
+                                        Isaac Okoro  <br>
+                                        <span class="text-xs text-slate-500"> GAM </span>
+                                      </td> 
+                                      <td class="">
+                                          <span class="badge bg-green-100 text-green-700">Completed</span>
+                                      </td> 
+                                      <td class="">Mar 7,2022</td> 
+                                      <td>
+                                        <button class="btn btn-sm btn-outline-primary py-0.5 px-2.5">View</button>
+                                      </td>
+                                  </tr>
+                                  
+                              </tbody>
+                          </table> 
+                      </div>
+                    </div>
+                  </div>
+
+             </div>
+                  
+                  <!--  -->
+              </div>
+          </div>
+          <!-- task modal  -->
+          <div id="taskModal" class="modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="font-medium text-base mr-auto">
+                            Create Task
+                        </h2>
+                    </div>
+                    <div class="modal-body grid grid-cols-12 gap-4 gap-y-3">
+                        <div class="col-span-12">
+                            <label for="pos-form-1" class="form-label">Task Description</label>
+                            <textarea name="" id="" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-1" class="form-label">Activity Owner</label>
+                            <select data-placeholder="Search Activity Owner" class="tom-select w-full">
+                                <option value="">Search</option>
+                                <option value="1">Lewis Ugege</option>
+                                <option value="2">Ayomide Boss</option>
+                                <option value="3">Chied Alhaji Kunle</option>
                             </select>
                         </div>
-                        
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-2" class="form-label control-label">Capitalization</label>
-                            <div class="input-group">
-                                <div id="input-group-email" class="input-group-text">&#8358;'Bn</div>
-                                <input type="text" class="form-control" placeholder="" aria-label="Email" aria-describedby="input-group-email">
-                            </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-2" class="form-label">Priority</label>
+                            <select id="" class="form-select">
+                              <option selected>Select...</option>
+                              <option>Low</option>
+                              <option>Average</option>
+                              <option>High</option>
+                          </select>
                         </div>
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-2" class="form-label control-label">Turnover</label>
-                            <div class="input-group">
-                                <div id="input-group-email" class="input-group-text">&#8358;'Bn</div>
-                                <input type="text" class="form-control" placeholder="" aria-label="Email" aria-describedby="input-group-email">
-                            </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Due Date</label>
+                            <input type="date" class="form-control" placeholder="" aria-describedby="">
                         </div>
-                        
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-3" class="form-label control-label">EBIT</label>
-                            <div class="input-group">
-                                <div id="input-group-email" class="input-group-text">&#8358;'Bn</div>
-                                <input type="text" class="form-control" placeholder="" aria-label="Email" aria-describedby="input-group-email">
-                            </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Time</label>
+                            <input type="time" class="form-control" placeholder="" aria-describedby="">
                         </div>
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-5" class="form-label control-label">EBITDA</label>
-                            <div class="input-group">
-                                <div id="input-group-email" class="input-group-text">&#8358;'Bn</div>
-                                <input type="text" class="form-control" placeholder="" aria-label="Email" aria-describedby="input-group-email">
-                            </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Reminder</label>
+                            <input type="date" class="form-control" placeholder="" aria-describedby="">
                         </div>
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-3" class="form-label control-label">PAT</label>
-                            <div class="input-group">
-                                <div id="input-group-email" class="input-group-text">&#8358;'Bn</div>
-                                <input type="text" class="form-control" placeholder="" aria-label="Email" aria-describedby="input-group-email">
-                            </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Repeat</label>
+                            <select id="" class="form-select">
+                                <option selected>Select</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Monthly</option>
+                                <option>Yearly</option>
+                                <option>Never</option>
+                            </select>
                         </div>
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-5" class="form-label control-label">PBT</label>
-                            <div class="input-group">
-                                <div id="input-group-email" class="input-group-text">&#8358;'Bn</div>
-                                <input type="text" class="form-control" placeholder="" aria-label="Email" aria-describedby="input-group-email">
-                            </div>
-                        </div>
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-3" class="form-label control-label">PE</label>
-                            <div class="input-group">
-                                <div id="input-group-email" class="input-group-text">&#8358;'Bn</div>
-                                <input type="text" class="form-control" placeholder="" aria-label="Email" aria-describedby="input-group-email">
-                            </div>
-                        </div>
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-5" class="form-label control-label">ROE</label>
-                            <div class="input-group">
-                                <div id="input-group-email" class="input-group-text">%</div>
-                                <input type="text" class="form-control" placeholder="" aria-label="Email" aria-describedby="input-group-email">
-                            </div>
-                        </div>
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-5" class="form-label control-label">Share Price</label>
-                            <input id="" type="text" class="form-control" placeholder="">
-                        </div>
-
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-5" class="form-label control-label">Total Debt</label>
-                            <div class="input-group">
-                                <div id="input-group-email" class="input-group-text">&#8358;'Bn</div>
-                                <input type="text" class="form-control" placeholder="" aria-label="Email" aria-describedby="input-group-email">
-                            </div>
-                        </div>
-
-                        <div class="intro-y col-span-12 flex items-center justify-center sm:justify-end mt-5">
-                            <a href="./add-global.html" class="btn btn-secondary w-24">Previous</a>
-                            <a href="./key-data.html" class="btn btn-primary ml-2">Save and Continue</a>
-                        </div>
+                       
+                    </div>
+                    <div class="modal-footer text-right">
+                        <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-28 mr-1">Cancel</button>
+                        <button type="button" class="btn btn-primary w-28">Save</button>
                     </div>
                 </div>
             </div>
-               
-                
+        </div>
+
+        <!-- meeting modal  -->
+        <div id="meetingModal" class="modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="font-medium text-base mr-auto">
+                            Create Meeting/ Calls
+                        </h2>
+                    </div>
+                    <div class="modal-body grid grid-cols-12 gap-4 gap-y-3">
+                        <div class="col-span-12">
+                            <label for="pos-form-1" class="form-label">Meeting Subject / Description</label>
+                            <textarea name="" id="" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="col-span-12">
+                            <label for="pos-form-1" class="form-label">Meeting Type</label>
+                            <select id="" class="form-select">
+                                <option selected>Select One</option>
+                                <option>Check-ins</option>
+                                <option>Courtesy Calls</option>
+                                <option>Follow Up</option>
+                                <option>Visit</option>
+                                <option>Routine Business Calls</option>
+                                <option>Serviuce Failure</option>
+                                <option>Strategic Plan Business Meeting </option>
+                            </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Start Date</label>
+                            <input type="date" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Time</label>
+                            <input type="time" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">End Date</label>
+                            <input type="date" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Time</label>
+                            <input type="time" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-1" class="form-label">Participant</label>
+                            <select data-placeholder="Search participant" class="tom-select w-full">
+                                <option value="">Search</option>
+                                <option value="1">Lewis Ugege</option>
+                                <option value="2">Ayomide Boss</option>
+                                <option value="3">Chied Alhaji Kunle</option>
+                            </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-2" class="form-label">Priority</label>
+                            <select id="" class="form-select">
+                              <option selected>Select...</option>
+                              <option>Low</option>
+                              <option>Average</option>
+                              <option>High</option>
+                          </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Reminder</label>
+                            <input type="date" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Repeat</label>
+                            <select id="" class="form-select">
+                                <option selected>Select</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Monthly</option>
+                                <option>Yearly</option>
+                                <option>Never</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                    <div class="modal-footer text-right">
+                        <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-28 mr-1">Cancel</button>
+                        <button type="button" class="btn btn-primary w-28">Save</button>
+                    </div>
+                </div>
             </div>
+        </div>
+
       </div>
         <!-- END: Content -->
         <!-- BEGIN: Dark Mode Switcher-->
@@ -427,7 +605,29 @@
         <script src="./src/js/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
-        
+        <script>
+            $(document).ready( function () {
+                $('.display').DataTable({
+                "info":false,
+                "responsive": true,
+                // "aoColumnDefs": [{
+                //     "bSortable": false,
+                //     "aTargets": [-1]
+                // }],
+                "searching": false,
+                "lengthChange": false,
+                "bInfo": false,
+                "bPaginate":false,
+                });
+  
+            $('a[data-tw-toggle="tab"]').on('shown.tw.tab', function (e) {
+                $(".display").resize()
+              $('.display:visible').each( function(e) {
+                $(this).DataTable().columns.adjust().responsive.recalc();
+              });
+            });
+          } );
+        </script>
         <!-- END: JS Assets-->
     </body>
 </html>

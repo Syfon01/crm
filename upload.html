@@ -309,93 +309,62 @@
                         <div class="font-medium text-base ml-3">Geographical Presence</div>
                     </div>
                     <div class="intro-x flex items-center mt-5">
-                        <button class="w-10 h-10 rounded-full btn text-slate-500 bg-slate-100 dark:bg-darkmode-400 dark:border-darkmode-400">5</button>
-                        <div class="text-base text-slate-600 dark:text-slate-500 ml-3">Subsidiaries</div>
+                        <button class="w-10 h-10 rounded-full btn btn btn-primary">5</button>
+                        <div class="font-medium text-base ml-3">Subsidiaries</div>
                     </div>
                     <div class="intro-x flex items-center mt-5">
-                        <button class="w-10 h-10 rounded-full btn text-slate-500 bg-slate-100 dark:bg-darkmode-400 dark:border-darkmode-400">6</button>
-                        <div class="text-base text-slate-600 dark:text-slate-500 ml-3">Upload Files</div>
+                        <button class="w-10 h-10 rounded-full btn btn btn-primary">6</button>
+                        <div class="font-medium text-base ml-3">Upload Files</div>
                     </div>
                 </div>
             </div>
             <div class="col-span-12 md:col-span-9 2xl:col-span-9 box p-2 cursor-pointer">
                 <div class="px-10 sm:px-5 lg:px-10 py-10 border-slate-200/60 dark:border-darkmode-400">
-                    <div class="font-medium text-base">Geographical Presence</div>
-                    <p class="text-slate-400">All fields marked (<span class="text-primary">*</span>) are required</p>
+                    <div class="font-medium text-base">Upload Files</div>
+                    <!-- <p class="text-slate-400">All fields marked (<span class="text-primary">*</span>) are required</p> -->
                     <div class="grid grid-cols-12 gap-4 gap-y-5 mt-5">
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-1" class="form-label control-label">Country of Presence</label>
-                            <select data-placeholder="Select Country" class="tom-select w-full" multiple> 
-                              <option value="1" selected>Nigeria</option> 
-                              <option value="2">Ghana</option> 
-                              <option value="3" selected>Burkina Faso</option> 
-                              <option value="4">Guinea</option> 
-                              <option value="5">Cameroun</option> 
-                            </select> 
-                        </div>
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                            <label for="input-wizard-2" class="form-label control-label">Assigned Relationship Manager</label>
-                            <select data-placeholder="Select Relationship Manager" class="tom-select w-full" multiple> 
-                              <option value="1"></option> 
-                              <option value="2">Damilola</option> 
-                              <option value="3" >Temitope</option> 
-                              <option value="4">Lewis</option> 
-                              <option value="5">Gafar</option> 
-                            </select>
-                        </div>
-                        <!-- <div class="intro-y col-span-12 sm:col-span-6 required">
-                          <label for="input-wizard-3" class="form-label control-label">Client Plan Available</label>
-                          <div class="flex flex-col sm:flex-row mt-2">
-                              <div class="form-check mr-3 box py-2 px-3"> 
-                                <label class="form-check-label mr-2" for="plan-1">Yes</label>
-                                <input id="plan-1" class="form-check-input" type="radio" name="client-plan" value="">  
-                              </div>
-                              <div class="form-check mt-2 sm:mt-0 box py-2 px-3"> 
-                                <label class="form-check-label mr-2" for="radio-switch-5">No</label>
-                                <input id="radio-switch-5" class="form-check-input" type="radio" name="client-plan" value="">  
-                              </div>
-                          </div>
-                        </div>
-                        <div class="intro-y col-span-12 sm:col-span-6 required">
-                          <label for="input-wizard-3" class="form-label control-label">Exisitng Business Relationship</label>
-                          <div class="flex flex-col sm:flex-row mt-2">
-                              <div class="form-check mr-3 box py-2 px-3"> 
-                                <label class="form-check-label mr-2" for="bus-1">Yes</label>
-                                <input id="bus-1" class="form-check-input" type="radio" name="bus-rel" value="">  
-                              </div>
-                              <div class="form-check mt-2 sm:mt-0 box py-2 px-3"> 
-                                <label class="form-check-label mr-2" for="bus-2">No</label>
-                                <input id="bus-2" class="form-check-input" type="radio" name="bus-rel" value="">  
-                              </div>
-                          </div>
-                        </div> -->
-                        <div class="intro-y col-span-12 sm:col-span-6">
-                          <label for="input-wizard-2" class="form-label control-label">Exchange Rate (LCY)</label>
-                          <div class="input-group">
-                              <div id="input-group-email" class="input-group-text">&#8358;'Bn</div>
-                              <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="">
-                          </div>
-                      </div>
-                      <div class="intro-y col-span-12 sm:col-span-6">
-                        <label for="input-wizard-3" class="form-label control-label">Relationship Status</label>
-                        <select id="" class="form-select">
-                            <option selected>Select Relationship Status</option>
-                            <option>Active Relationship</option>
-                            <option>Passive Relationship</option>
-                            <option>No Relationship</option>
-                            <option>Entity Not Present</option>
-                        </select>
-                      </div>
-                        
+                      <form data-single="true" action="/file-upload" class="dropzone col-span-12"> 
+                        <div class="fallback"> 
+                          <input name="file" type="file" /> 
+                        </div> 
+                        <div class="dz-message" data-dz-message> 
+                          <a href="" class="w-24 file__icon file__icon--image mx-auto block">
+                            <div class="file__icon--image__preview">
+                                <img alt="" src="./src/images/upload.svg" class="w-16 h-16">
+                            </div>
+                        </a>
+
+                          <div class="text-lg font-medium mt-2">Drop files here or click to upload.</div> 
+                        </div> 
+                      </form> 
+                      
                         <div class="intro-y col-span-12 flex items-center justify-center sm:justify-end mt-5">
-                            <a href="./key-data.html" class="btn btn-secondary w-24">Previous</a>
-                            <a href="./subsidiary.html" class="btn btn-primary ml-2">Save and Continue</a>
+                            <a href="./geographical-presence.html" class="btn btn-secondary w-24">Previous</a>
+                            <button class="btn btn-primary ml-2" data-tw-toggle="modal" data-tw-target="#finishModal">Save and Continue</button>
                         </div>
                     </div>
                 </div>
             </div>
                 
             </div> 
+             <!-- BEGIN: New Order Modal -->
+             <div id="finishModal" class="modal" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content modal-sm">
+                      
+                      <div class="modal-body text-center py-10">
+                        <div class="p-5 text-center"> 
+                         <img src="./src/images/Check.svg" alt="" class="w-20 h-20 mx-auto">
+                          <div class="text-lg text-slate-500 mt-3">Profile Created Successfully</div>
+                      </div>
+                      </div>
+                      <div class="modal-footer text-right">
+                          <a href="./add-global.html" type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-28 mr-1">Add New</a>
+                          <a href="./account-profile.html" type="button" class="btn btn-primary w-32">View Company</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
         <!-- END: Content -->
         <!-- BEGIN: Dark Mode Switcher-->
@@ -410,7 +379,7 @@
         <script src="./src/js/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
-        
+       
         <!-- END: JS Assets-->
     </body>
 </html>

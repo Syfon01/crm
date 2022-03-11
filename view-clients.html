@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="UBA CRM ">
         <meta name="author" content="UBA">
-        <title>Global Account - CRM</title>
+        <title>Client Engagement - CRM</title>
         <!-- BEGIN: CSS Assets-->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
         <link rel="stylesheet" href="dist/css/app.css" />
@@ -35,13 +35,13 @@
                   
               </li>
               <li>
-                  <a href="./global-account.html" class="menu menu--active">
+                  <a href="./global-account.html" class="menu">
                       <div class="menu__icon"> <i data-feather="box"></i> </div>
                       <div class="menu__title"> Global Account </div>
                   </a>
               </li>
               <li>
-                  <a href="./client-engagement.html" class="menu">
+                  <a href="./client-engagement.html" class="menu menu--active">
                       <div class="menu__icon"> <i data-feather="activity"></i> </div>
                       <div class="menu__title"> Client Engagement</div>
                   </a>
@@ -95,7 +95,7 @@
                 <nav aria-label="breadcrumb" class="-intro-x h-full mr-auto">
                     <ol class="breadcrumb breadcrumb-main">
                         <li class="breadcrumb-item"><a href="#">CRM</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Global Account</li>
+                        <li class="breadcrumb-item active" aria-current="page">Client Engagement</li>
                     </ol>
                 </nav>
                 <!-- END: Breadcrumb -->
@@ -127,7 +127,7 @@
                                 <div class="ml-2 overflow-hidden">
                                     <div class="flex items-center justify-between">
                                         <a href="javascript:;" class="font-medium truncate mr-5">Johnny Depp</a> 
-                                        <div class="text-xs text-slate-400 ml-auto ">01:10 PM</div>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
                                     </div>
                                     <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
                                 </div>
@@ -140,7 +140,7 @@
                                 <div class="ml-2 overflow-hidden">
                                     <div class="flex items-center justify-between">
                                         <a href="javascript:;" class="font-medium truncate mr-5">Denzel Washington</a> 
-                                        <div class="text-xs text-slate-400 ml-auto ">03:20 PM</div>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">03:20 PM</div>
                                     </div>
                                     <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
                                 </div>
@@ -153,7 +153,7 @@
                                 <div class="ml-2 overflow-hidden">
                                     <div class="flex items-center justify-between">
                                         <a href="javascript:;" class="font-medium truncate mr-5">Denzel Washington</a> 
-                                        <div class="text-xs text-slate-400 ml-auto ">01:10 PM</div>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">01:10 PM</div>
                                     </div>
                                     <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
                                 </div>
@@ -166,7 +166,7 @@
                                 <div class="ml-2 overflow-hidden">
                                     <div class="flex items-center justify-between">
                                         <a href="javascript:;" class="font-medium truncate mr-5">Brad Pitt</a> 
-                                        <div class="text-xs text-slate-400 ml-auto ">06:05 AM</div>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">06:05 AM</div>
                                     </div>
                                     <div class="w-full truncate text-slate-500 mt-0.5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem </div>
                                 </div>
@@ -179,7 +179,7 @@
                                 <div class="ml-2 overflow-hidden">
                                     <div class="flex items-center justify-between">
                                         <a href="javascript:;" class="font-medium truncate mr-5">Christian Bale</a> 
-                                        <div class="text-xs text-slate-400 ml-auto ">05:09 AM</div>
+                                        <div class="text-xs text-slate-400 ml-auto whitespace-nowrap">05:09 AM</div>
                                     </div>
                                     <div class="w-full truncate text-slate-500 mt-0.5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomi</div>
                                 </div>
@@ -238,13 +238,13 @@
                     
                 </li>
                 <li>
-                    <a href="./global-account.html" class="top-menu top-menu--active">
+                    <a href="./global-account.html" class="top-menu">
                         <div class="top-menu__icon"> <i data-feather="box"></i> </div>
                         <div class="top-menu__title"> Global Account </div>
                     </a>
                 </li>
                 <li>
-                    <a href="./client-engagement.html" class="top-menu">
+                    <a href="./client-engagement.html" class="top-menu top-menu--active">
                         <div class="top-menu__icon"> <i data-feather="activity"></i> </div>
                         <div class="top-menu__title"> Client Engagement</div>
                     </a>
@@ -286,11 +286,16 @@
         <!-- END: Top Menu -->
         <!-- BEGIN: Content -->
         <div class="content">
-          <div class="intro-y flex items-center mt-8">
-              <h1 class="text-xl font-medium mr-auto">
-                Company  Profile
-              </h1>
-          </div>
+          <div class="intro-y flex flex-col sm:flex-row justify-between items-center mt-8">
+            <div>
+              <h2 class="text-lg font-medium mr-auto">
+                Clients Engagement
+              </h2>
+            </div>
+            
+            
+        </div>
+       
           <div class="grid grid-cols-12 gap-6">
               <!-- BEGIN: Profile Menu -->
               <div class="col-span-12 lg:col-span-3 2xl:col-span-3 flex lg:block flex-col-reverse">
@@ -344,154 +349,348 @@
                           </div>
                       </div>
                       <div class="p-8 border-t border-slate-200/60 dark:border-darkmode-400">
-                          <a class="flex items-center" href="./account-profile.html"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Account Information </a>
-                          <a class="flex items-center mt-5 text-primary font-medium" href="./account-plans.html"> <i data-feather="box" class="w-4 h-4 mr-2"></i> Account Plans </a>
-                          <a class="flex items-center mt-5" href="./account-attachments.html"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Attachments </a>
+                          <a class="flex items-center text-primary font-medium" href="./view-clients.html"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Activities </a>
+                          <a class="flex items-center mt-5" href="./calling-plans.html"> <i data-feather="box" class="w-4 h-4 mr-2"></i> Calling Plans </a>
+                          <a class="flex items-center mt-5" href="./calling-matrix.html"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Calling Matrix </a>
                       </div>
                      
-                      <div class="p-8 border-t border-slate-200/60 dark:border-darkmode-400 flex">
+                      <!-- <div class="p-8 border-t border-slate-200/60 dark:border-darkmode-400 flex">
                         <a href="./add-global.html" class="btn btn-primary shadow-md ml-auto"><i class="w-4 h-4 text-white font-bold mr-2" data-feather="plus"></i>  Add Global Account</a>
-                      </div>
+                      </div> -->
                   </div>
               </div>
               <!-- END: Profile Menu -->
               <div class="col-span-12 lg:col-span-9 2xl:col-span-9">
-                <div class="intro-y box mt-5">
-                  <div class="flex justify-between items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
-                    <div>
-                      <h2 class="font-medium text-base mr-auto">
-                        Account Plans
-                    </h2>
-                    <p class="text-sm text-slate-500">See all accounts plans pertaining to a global account</p>
+               
+                  <div class="intro-y box lg:mt-5">
+                    <div class="py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400 flex flex-col sm:flex-row justify-between items-center">
+                      <div>
+                        <h2 class="text-lg font-medium mr-auto">
+                          Activities
+                        </h2>
+                        <p class="text-sm text-slate-500">Create and manage your tasks from one place.</p>
+                      </div>
+                      
+                      <div class="w-full sm:w-auto flex mt-4 sm:mt-0">
+                        <div class="dropdown" style="position: relative;">
+                            <button class="dropdown-toggle btn px-2 btn-primary shadow-md" aria-expanded="false" data-tw-toggle="dropdown">
+                              <i class="w-4 h-4 text-white font-bold mr-2" data-feather="plus"></i>  Create New</a>
+                            </button>
+                            <div class="dropdown-menu w-40" id="_88sou6vge" data-popper-placement="bottom-end" style="position: absolute; inset: 0px 0px auto auto; margin: 0px; transform: translate3d(0px, 38.4px, 0px);">
+                                <ul class="dropdown-content">
+                                    <li>
+                                        <button type="button" class="dropdown-item w-full" data-tw-toggle="modal" data-tw-target="#taskModal"> 
+                                            Task
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="dropdown-item w-full" data-tw-toggle="modal" data-tw-target="#meetingModal"> 
+                                            Meeting/Calls
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                          <!-- <a href="./add-activity.html" class="btn btn-primary shadow-md">
+                              <i class="w-4 h-4 text-white font-bold mr-2" data-feather="plus"></i>  Add New Activit
+                              y</a> -->
+                      </div>
+                  </div>
+
+                  <div class="max-h-full">
+                    <div class="xl:sticky top-0 px-5">
+                       
+                        <ul class=" nav nav-pills border border-slate-300 dark:border-darkmode-300 border-dashed rounded-md mx-auto p-1 mt-5 " role="tablist" >
+                            <li id="weekly-report-tab" class="nav-item" role="presentation">
+                                <button class="nav-link py-1.5 px-5 active" data-tw-toggle="pill" data-tw-target="#activity" type="button" role="tab" aria-controls="" aria-selected="true" > All Activities </button>
+                            </li>
+                           
+                            <li id="monthly-report-tab" class="nav-item" role="presentation">
+                              <button class="nav-link py-1.5 px-5" data-tw-toggle="pill" data-tw-target="#meeting" type="button" role="tab" aria-controls="" aria-selected="false" > Meetings </button>
+                          </li>
+                           <li id="monthly-report-tab" class="nav-item" role="presentation">
+                                <button class="nav-link py-1.5 px-5" data-tw-toggle="pill" data-tw-target="#task" type="button" role="tab" aria-controls="" aria-selected="false" > Tasks </button>
+                            </li>
+                        </ul>
                     </div>
-                    
-                    <div class="border-t border-slate-200/60 dark:border-darkmode-400 flex">
-                      <button class="btn btn-primary shadow-md ml-auto"  data-tw-toggle="modal" data-tw-target="#addModal"><i class="w-4 h-4 text-white font-bold mr-2" data-feather="plus"></i>  Add Account Plan</button>
+                    <div class="tab-content px-5 py-5">
+                        <div class="tab-pane active gap-y-6 w-full" id="activity" role="tabpanel" aria-labelledby="weekly-report-tab">
+                          <div class="intro-y">
+                            <div class="overflow-x"> 
+                              <table class="table display tab-table"> 
+                                  <thead class=""> 
+                                      <tr> 
+                                          <th class="">Description</th>
+                                           <th class="">Activity Type</th> 
+                                           <th class="">Status</th> 
+                                           <th class="">Priority</th> 
+                                           <th class="">Activity Owner</th> 
+                                           <th class="">Date</th> 
+                                           <th class=""></th> 
+                                      </tr> 
+                                  </thead> 
+                                  <tbody> 
+                                      <tr> 
+                                          <td class="">UAT Meeting</td> 
+                                          <td class="">Meeting</td> 
+                                          <td class="">
+                                              <span class="badge bg-green-100 text-green-700">Completed</span>
+                                          </td> 
+                                          <td class="text-info">Average</td> 
+                                          <td class="">Sola Yomi-Ajayi</td> 
+                                          <td class="">Mar 7,2022</td> 
+                                          <td>
+                                            <button class="btn btn-sm btn-outline-primary py-0.5 px-2.5">View</button>
+                                          </td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="">Consult Britsih on their account</td> 
+                                        <td class="">Task</td> 
+                                        <td class="">
+                                            <span class="badge bg-slate-300 text-slate-800">Not Started</span>
+                                        </td> 
+                                        <td class="text-danger">High</td> 
+                                        <td class="">Sola Yomi-Ajayi</td> 
+                                        <td class="">Mar 7,2022</td> 
+                                        <td>
+                                          <button class="btn btn-sm btn-outline-primary py-0.5 px-2.5">View</button>
+                                        </td>
+                                    </tr>
+                                      
+                                  </tbody>
+                              </table> 
+                          </div>
+                        </div>
+                        </div> 
+                        <div class="tab-pane gap-y-6 w-full" id="meeting" role="tabpanel" aria-labelledby="weekly-report-tab">
+                          <div class="intro-y">
+                            <div class="overflow-x"> 
+                                <table class="table display tab-table"> 
+                                    <thead class=""> 
+                                        <tr> 
+                                            <th class="">Description</th>
+                                             <th class="">Activity Type</th> 
+                                             <th class="">Status</th> 
+                                             <th class="">Priority</th> 
+                                             <th class="">Activity Owner</th> 
+                                             <th class="">Date</th> 
+                                             <th class=""></th> 
+                                        </tr> 
+                                    </thead> 
+                                    <tbody> 
+                                        <tr> 
+                                            <td class="">UAT Meeting</td> 
+                                            <td class="">Meeting</td> 
+                                            <td class="">
+                                                <span class="badge bg-green-100 text-green-700">Completed</span>
+                                            </td> 
+                                            <td class="text-info">Average</td> 
+                                            <td class="">Sola Yomi-Ajayi</td> 
+                                            <td class="">Mar 7,2022</td> 
+                                            <td>
+                                              <button class="btn btn-sm btn-outline-primary py-0.5 px-2.5">View</button>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table> 
+                            </div>
+                        </div>
+                        </div> 
+                        <div class="tab-pane gap-y-6 w-full" id="task" role="tabpanel" aria-labelledby="weekly-report-tab">
+                          <div class="intro-y">
+                            <div class="overflow-x"> 
+                                <table class="table display tab-table"> 
+                                    <thead class=""> 
+                                        <tr> 
+                                            <th class="">Description</th>
+                                             <th class="">Activity Type</th> 
+                                             <th class="">Status</th> 
+                                             <th class="">Priority</th> 
+                                             <th class="">Activity Owner</th> 
+                                             <th class="">Date</th> 
+                                             <th class=""></th> 
+                                        </tr> 
+                                    </thead> 
+                                    <tbody> 
+                                       
+                                        <tr> 
+                                          <td class="">Consult Britsih on their account</td> 
+                                          <td class="">Task</td> 
+                                          <td class="">
+                                              <span class="badge bg-slate-300 text-slate-800">Not Started</span>
+                                          </td> 
+                                          <td class="text-danger">High</td> 
+                                          <td class="">Sola Yomi-Ajayi</td> 
+                                          <td class="">Mar 7,2022</td> 
+                                          <td>
+                                            <button class="btn btn-sm btn-outline-primary py-0.5 px-2.5">View</button>
+                                          </td>
+                                      </tr>
+                                        
+                                    </tbody>
+                                </table> 
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                  <div class="px-8 py-3">
-                  <div class="overflow-x-auto scrollbar-hidden pb-5">
-                    <table id="table_id" class="display table-others">
-                        <thead>
-                            <tr>
-                                <th class="">X-Geographical Presence</th>
-                                <th>Relationship Status</th>
-                                <th >Client Plan Avialable?</th>
-                                <th >Subsidiaries Present</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="">
-                                  Ghana
-                                </td>
-                                <td class="">
-                                    <select name="" id="" class="select-col">
-                                    <option value="1">NR</option>
-                                    <option value="2">PR</option>
-                                    <option value="3">AR</option>
-                                    <option value="4">ENP</option>
-                                </select>
-                            </td>
-                                <td class="">No</td>
-                                <td class="">0</td>
-                                <td class="text-center ">
-                                  <button class="btn btn-sm btn-outline-primary">Preview</button>
-                                </td>
-                            </tr>
-                           
-                            <tr>
-                                <td class="">
-                                  Ghana
-                                </td>
-                                <td class="">
-                                    <select name="" id="" class="select-col bg-primary text-white">
-                                        <option value="1">NR</option>
-                                        <option value="2">PR</option>
-                                        <option value="3">AR</option>
-                                        <option value="4">ENP</option>
-                                    </select>
-                            </td>
-                                <td class="">No</td>
-                                <td class="">0</td>
-                                <td class="text-center ">
-                                  <button class="btn btn-sm btn-outline-primary">Preview</button>
-                                </td>
-                            </tr>
-                           
-                            
-                        </tbody>
-                    </table>
-                  </div>
-                  </div>
+             </div>
                   
-              </div>
                   <!-- END: Personal Information -->
               </div>
           </div>
-          <!-- modal  -->
-          <div id="addModal" class="modal" tabindex="-1" aria-hidden="true">
+          <!-- task modal  -->
+          <div id="taskModal" class="modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header pt-5">
-                        <h2 class="text-lg text-base font-medium">Add Plan</h2>
+                    <div class="modal-header">
+                        <h2 class="font-medium text-base mr-auto">
+                            Create Task
+                        </h2>
                     </div>
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="intro-y col-span-12">
-                                <label for="input-wizard-5" class="form-label control-label">Name</label>
-                               <input type="text" class="form-control" placeholder="Enter document name">
-                            </div>
-
-                            <div class="intro-y col-span-12 mt-5">
-                                <label for="input-wizard-5" class="form-label control-label">Country</label>
-                                <select id="" class="form-select">
-                                    <option selected>Select Company</option>
-                                    <option>Ghana</option>
-                                    <option>Nigeria</option>
-                                    <option>Ukraine</option>
-                                    <option>Russia</option>
-                                </select>
-                            </div>
-                            <div class="intro-y col-span-12 mt-5">
-                                <label for="input-wizard-5" class="form-label control-label">Year</label>
-                                <select id="" class="form-select">
-                                    <option selected>Select Year</option>
-                                    <option>2020</option>
-                                    <option>2021</option>
-                                    <option>2022</option>
-                                </select>
-                            </div>
-                           
-                            <div class="intro-y col-span-12 mt-5">
-                                <label for="input-wizard-5" class="form-label control-label">Upload</label>
-                                <div data-single="true" action="/file-upload" class="dropzone col-span-12"> 
-                                    <div class="fallback"> 
-                                      <input name="file" type="file" /> 
-                                    </div> 
-                                    <div class="dz-message my-3" data-dz-message> 
-                                      <a href="" class="w-24 file__icon file__icon--image mx-auto block">
-                                        <div class="file__icon--image__preview">
-                                            <img alt="" src="./src/images/upload.svg" class="w-8 h-8">
-                                        </div>
-                                    </a>
-            
-                                      <div class="text-slate-700 mt-2">Drop files here or click to upload.</div> 
-                                    </div> 
-                                  </div> 
-                            </div>
-
-                            
-                        </form>
+                    <div class="modal-body grid grid-cols-12 gap-4 gap-y-3">
+                        <div class="col-span-12">
+                            <label for="pos-form-1" class="form-label">Task Description</label>
+                            <textarea name="" id="" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-1" class="form-label">Activity Owner</label>
+                            <select data-placeholder="Search Activity Owner" class="tom-select w-full">
+                                <option value="">Search</option>
+                                <option value="1">Lewis Ugege</option>
+                                <option value="2">Ayomide Boss</option>
+                                <option value="3">Chied Alhaji Kunle</option>
+                            </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-2" class="form-label">Priority</label>
+                            <select id="" class="form-select">
+                              <option selected>Select...</option>
+                              <option>Low</option>
+                              <option>Average</option>
+                              <option>High</option>
+                          </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Due Date</label>
+                            <input type="date" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Time</label>
+                            <input type="time" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Reminder</label>
+                            <input type="date" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Repeat</label>
+                            <select id="" class="form-select">
+                                <option selected>Select</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Monthly</option>
+                                <option>Yearly</option>
+                                <option>Never</option>
+                            </select>
+                        </div>
+                       
                     </div>
                     <div class="modal-footer text-right">
                         <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-28 mr-1">Cancel</button>
-                        <button type="button" class="btn btn-primary w-32">Upload</button>
+                        <button type="button" class="btn btn-primary w-28">Save</button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- meeting modal  -->
+        <div id="meetingModal" class="modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="font-medium text-base mr-auto">
+                            Create Meeting/ Calls
+                        </h2>
+                    </div>
+                    <div class="modal-body grid grid-cols-12 gap-4 gap-y-3">
+                        <div class="col-span-12">
+                            <label for="pos-form-1" class="form-label">Meeting Subject / Description</label>
+                            <textarea name="" id="" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="col-span-12">
+                            <label for="pos-form-1" class="form-label">Meeting Type</label>
+                            <select id="" class="form-select">
+                                <option selected>Select One</option>
+                                <option>Check-ins</option>
+                                <option>Courtesy Calls</option>
+                                <option>Follow Up</option>
+                                <option>Visit</option>
+                                <option>Routine Business Calls</option>
+                                <option>Serviuce Failure</option>
+                                <option>Strategic Plan Business Meeting </option>
+                            </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Start Date</label>
+                            <input type="date" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Time</label>
+                            <input type="time" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">End Date</label>
+                            <input type="date" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Time</label>
+                            <input type="time" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-1" class="form-label">Participant</label>
+                            <select data-placeholder="Search participant" class="tom-select w-full">
+                                <option value="">Search</option>
+                                <option value="1">Lewis Ugege</option>
+                                <option value="2">Ayomide Boss</option>
+                                <option value="3">Chied Alhaji Kunle</option>
+                            </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-2" class="form-label">Priority</label>
+                            <select id="" class="form-select">
+                              <option selected>Select...</option>
+                              <option>Low</option>
+                              <option>Average</option>
+                              <option>High</option>
+                          </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Reminder</label>
+                            <input type="date" class="form-control" placeholder="" aria-describedby="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Repeat</label>
+                            <select id="" class="form-select">
+                                <option selected>Select</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Monthly</option>
+                                <option>Yearly</option>
+                                <option>Never</option>
+                            </select>
+                        </div>
+                       
+                    </div>
+                    <div class="modal-footer text-right">
+                        <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-28 mr-1">Cancel</button>
+                        <button type="button" class="btn btn-primary w-28">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
       </div>
         <!-- END: Content -->
         <!-- BEGIN: Dark Mode Switcher-->
@@ -520,7 +719,14 @@
                 "bInfo": false,
                 "bPaginate":false,
                 });
+  
+            $('a[data-tw-toggle="tab"]').on('shown.tw.tab', function (e) {
+                $(".display").resize()
+              $('.display:visible').each( function(e) {
+                $(this).DataTable().columns.adjust().responsive.recalc();
+              });
             });
+          } );
         </script>
         <!-- END: JS Assets-->
     </body>

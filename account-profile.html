@@ -293,11 +293,11 @@
           </div>
           <div class="grid grid-cols-12 gap-6">
               <!-- BEGIN: Profile Menu -->
-              <div class="col-span-12 lg:col-span-4 2xl:col-span-3 flex lg:block flex-col-reverse">
+              <div class="col-span-12 lg:col-span-3 2xl:col-span-3 flex lg:block flex-col-reverse">
                   <div class="intro-y box mt-5">
                       <div class="relative flex items-center p-5">
                           <div class="w-12 h-12 image-fit">
-                              <img alt="profile-photo" class="rounded-full" src="dist/images/profile-3.jpg">
+                              <img alt="profile-photo" class="rounded-full" src="dist/images/profile-1.jpg">
                           </div>
                           <div class="ml-4 mr-auto">
                               <div class="font-medium text-base">British Airways</div>
@@ -355,7 +355,7 @@
                   </div>
               </div>
               <!-- END: Profile Menu -->
-              <div class="col-span-12 lg:col-span-8 2xl:col-span-9">
+              <div class="col-span-12 lg:col-span-9 2xl:col-span-9">
                   <div class="intro-y box lg:mt-5">
                     <div class="flex items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
                         <h2 class="font-medium text-base mr-auto">
@@ -444,13 +444,13 @@
                                     </div>
                                   </div>
                                   <div>
-                                  <button type="button" class="btn btn-primary w-24 mt-3 float-right">Save</button>
+                                  <button type="button" class="btn btn-primary w-24 mt-3 float-right">Edit</button>
                                   </div>
                               </div>
                               <div class="w-40 mx-auto xl:mr-0 xl:ml-6">
                                   <div class="border-2 border-dashed shadow-sm border-slate-200/60 dark:border-darkmode-400 rounded-md p-5">
                                       <div class="h-28 relative image-fit cursor-pointer zoom-in mx-auto">
-                                          <img class="rounded-md" alt="profile-photo" src="dist/images/profile-3.jpg">
+                                          <img class="rounded-md" alt="profile-photo" src="dist/images/profile-1.jpg">
                                           <div title="Remove this profile photo?" class="tooltip w-5 h-5 flex items-center justify-center absolute rounded-full text-white bg-danger right-0 top-0 -mr-2 -mt-2"> <i data-feather="x" class="w-4 h-4"></i> </div>
                                       </div>
                                       <div class="mx-auto cursor-pointer relative mt-5">
@@ -462,51 +462,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="intro-y box mt-5">
-                    <div class="flex items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
-                        <h2 class="font-medium text-base mr-auto">
-                            Account Plans
-                        </h2>
-                    </div>
-                    <div class="p-8">
-                        <div class="overflow-x"> 
-                            <table class="table table-sm table-striped"> 
-                                <thead class="table-dark"> 
-                                    <tr> 
-                                        <th class="">X-Geographical Presence</th>
-                                         <th class="">Client Plan Available?</th> 
-                                         <th class="">Existing UBA Relationship?</th> 
-                                         <th class="">Subsidiary Present</th> 
-                                         <th class="">Relationship Managers</th> 
-                                    </tr> 
-                                </thead> 
-                                <tbody> 
-                                    <tr> 
-                                        <td class="">Nigeria</td> 
-                                        <td class="">Yes</td> 
-                                        <td class="">Yes</td> 
-                                        <td class="">2</td> 
-                                        <td class="">Sola Yomi-Ajayi</td> 
-                                    </tr>
-                                    <tr> 
-                                        <td class="">Nigeria</td> 
-                                        <td class="">Yes</td> 
-                                        <td class="">Yes</td> 
-                                        <td class="">2</td> 
-                                        <td class="">Sola Yomi-Ajayi</td> 
-                                    </tr>
-                                    <tr> 
-                                        <td class="">Nigeria</td> 
-                                        <td class="">Yes</td> 
-                                        <td class="">Yes</td> 
-                                        <td class="">2</td> 
-                                        <td class="">Sola Yomi-Ajayi</td> 
-                                    </tr>
-                                </tbody>
-                            </table> 
-                        </div>
-                    </div>
-                </div>
+                  
                   <div class="intro-y box mt-5">
                       <div class="flex items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
                           <h2 class="font-medium text-base mr-auto">
@@ -565,23 +521,29 @@
                               </div>
                           </div>
                           <div class="flex justify-content-end mt-4">
-                              <button type="button" class="btn btn-primary w-24 ml-auto">Save</button>
+                              <button type="button" class="btn btn-primary w-24 ml-auto">Edit</button>
                           </div>
                       </div>
                   </div>
 
                 <div class="intro-y box mt-5">
-                    <div class="flex items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
-                        <h2 class="font-medium text-base mr-auto">
+                    <div class="flex justify-between items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
+                        <div>
+                          <h2 class="font-medium text-base mr-auto">
                             Key Contacts
                         </h2>
+                        </div>
+                        
+                        <div class="border-t border-slate-200/60 dark:border-darkmode-400 flex">
+                          <button class="btn btn-primary shadow-md ml-auto" data-tw-toggle="modal" data-tw-target="#addContactModal"><i class="w-4 h-4 text-white font-bold mr-2" data-feather="plus"></i>  Add New</button>
+                        </div>
                     </div>
                     <div class="p-8">
                         <div class="grid grid-cols-12 gap-x-5">
                             <div class="col-span-12 xl:col-span-6">
                                 <div class="relative flex">
                                     <div class="w-12 h-12 image-fit">
-                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-3.jpg">
+                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-1.jpg">
                                     </div>
                                     <div class="ml-4 mr-auto">
                                         <p class="font-medium text-base">Temitope Ugege <span class="text-slate-500 font-normal text-sm">(Nigeria)</span></p>
@@ -609,7 +571,7 @@
                             <div class="col-span-12 xl:col-span-6">
                                 <div class="relative flex">
                                     <div class="w-12 h-12 image-fit">
-                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-3.jpg">
+                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-1.jpg">
                                     </div>
                                     <div class="ml-4 mr-auto">
                                         <p class="font-medium text-base">Temitope Ugege <span class="text-slate-500 font-normal text-sm">(Nigeria)</span></p>
@@ -648,7 +610,7 @@
                             <div class="col-span-12 xl:col-span-6">
                                 <div class="relative flex">
                                     <div class="w-12 h-12 image-fit">
-                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-3.jpg">
+                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-1.jpg">
                                     </div>
                                     <div class="ml-4 mr-auto">
                                         <p class="font-medium text-base">Lene Herbert <span class="text-slate-500 font-normal text-sm">(Nigeria)</span></p>
@@ -660,7 +622,7 @@
                             <div class="col-span-12 xl:col-span-6">
                                 <div class="relative flex">
                                     <div class="w-12 h-12 image-fit">
-                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-3.jpg">
+                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-1.jpg">
                                     </div>
                                     <div class="ml-4 mr-auto">
                                         <p class="font-medium text-base">Gafar Dennis <span class="text-slate-500 font-normal text-sm">(Russia)</span></p>
@@ -672,9 +634,195 @@
                        
                     </div>
                 </div>
+
+                <div class="intro-y box mt-5">
+                    <div class="flex justify-between items-center py-5 px-8 border-b border-slate-200/60 dark:border-darkmode-400">
+                        <div>
+                          <h2 class="font-medium text-base mr-auto">
+                            Subsidiaries
+                        </h2>
+                        </div>
+                        
+                        <div class="border-t border-slate-200/60 dark:border-darkmode-400 flex">
+                          <button class="btn btn-primary shadow-md ml-auto"  data-tw-toggle="modal" data-tw-target="#addSubsidiaryModal"><i class="w-4 h-4 text-white font-bold mr-2" data-feather="plus"></i>  Add New</button>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid grid-cols-12 gap-x-5">
+                            <div class="col-span-12 xl:col-span-6">
+                                <div class="relative flex items-center">
+                                    <div class="w-12 h-12 image-fit">
+                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-1.jpg">
+                                    </div>
+                                    <div class="ml-4 mr-auto">
+                                        <p class="font-medium text-base">Somo  Promise <span class="text-slate-500 font-normal text-sm">(Nigeria)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-12 xl:col-span-6">
+                                <div class="relative flex items-center">
+                                    <div class="w-12 h-12 image-fit">
+                                        <img alt="profile-photo" class="rounded-full" src="dist/images/profile-1.jpg">
+                                    </div>
+                                    <div class="ml-4 mr-auto">
+                                        <p class="font-medium text-base">Okoro Dennis <span class="text-slate-500 font-normal text-sm">(Russia)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
                   <!-- END: Personal Information -->
               </div>
           </div>
+         
+          <!--Add contact  modal  -->
+          <div id="addContactModal" class="modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header pt-5">
+                        <h2 class="text-lg text-base font-medium">Add New Contact</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="grid grid-cols-12 gap-4 gap-y-5">
+                                <div class="intro-y col-span-12 sm:col-span-6 required">
+                                    <label for="input-wizard-1" class="form-label control-label">First Name</label>
+                                    <input id="" type="text" class="form-control" placeholder="Enter First Name">
+                                </div>
+                                <div class="intro-y col-span-12 sm:col-span-6 required">
+                                    <label for="input-wizard-2" class="form-label control-label">Last Name</label>
+                                    <input id="" type="text" class="form-control" placeholder="Enter Last Name">
+                                </div>
+                                <div class="intro-y col-span-12 sm:col-span-6 required">
+                                    <label for="input-wizard-3" class="form-label control-label">Designation</label>
+                                    <input id="" type="text" class="form-control" placeholder="Enter Designation">
+                                </div>
+                                <div class="intro-y col-span-12 sm:col-span-6 required">
+                                    <label for="input-wizard-5" class="form-label control-label">Role</label>
+                                    <select data-placeholder="Select Role" class="tom-select w-full">
+                                        <option value="">select Role</option>
+                                        <option value="1">Decison Maker</option>
+                                        <option value="2">Recommender</option>
+                                        <option value="3">Influencer</option>
+                                        <option value="4">Champion</option>
+                                        <option value="5">Other</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="intro-y col-span-12 sm:col-span-6 required">
+                                    <label for="input-wizard-5" class="form-label control-label">Country</label>
+                                    <select data-placeholder="Select" class="tom-select w-full">
+                                        <option value="1">Select</option>
+                                        <option value="2">Nigeria</option>
+                                        <option value="3">Ghana</option>
+                                        <option value="4">Cameroun</option>
+                                        <option value="5">Burkina faso</option>
+                                    </select>
+                                </div>
+                                <div class="intro-y col-span-12 sm:col-span-6 required">
+                                    <label for="input-wizard-3" class="form-label control-label">Email</label>
+                                    <input id="" type="email" class="form-control" placeholder="Enter Email">
+                                </div>
+                                <div class="intro-y col-span-12 sm:col-span-6 required">
+                                    <label for="input-wizard-5" class="form-label control-label">Current Engagement Level</label>
+                                    <select data-placeholder="Select" class="tom-select w-full">
+                                        <option value="1">Select</option>
+                                        <option value="2">Unknown</option>
+                                        <option value="3">Low</option>
+                                        <option value="4">Average</option>
+                                        <option value="5">High</option>
+                                    </select>
+                                </div>
+                                <div class="intro-y col-span-12 sm:col-span-6 required">
+                                    <label for="input-wizard-5" class="form-label control-label">Target Engagement Level</label>
+                                    <select data-placeholder="Select" class="tom-select w-full">
+                                        <option value="1">Select</option>
+                                        <option value="2">Unknown</option>
+                                        <option value="3">Low</option>
+                                        <option value="4">Average</option>
+                                        <option value="5">High</option>
+                                    </select>
+                                </div>
+                                <div class="intro-y col-span-12 sm:col-span-6">
+                                    <label for="input-wizard-2" class="form-label control-label">Mobile Number / Landline</label>
+                                    <input id="" type="date" class="form-control" placeholder="Mobile Number">
+                                </div>
+                                <div class="intro-y col-span-12 sm:col-span-6">
+                                    <label for="input-wizard-2" class="form-label control-label">Phone Number</label>
+                                    <input id="" type="date" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <div class="intro-y col-span-12 sm:col-span-6">
+                                    <label for="input-wizard-2" class="form-label control-label">DOB</label>
+                                    <input id="" type="date" class="form-control" placeholder="">
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer text-right">
+                        <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-28 mr-1">Cancel</button>
+                        <button type="button" class="btn btn-primary w-32">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!--Add subsidairy  modal  -->
+         <div id="addSubsidiaryModal" class="modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header pt-5">
+                        <h2 class="text-lg text-base font-medium">Add New Subsidiary</h2>
+                    </div>
+                    <div class="modal-body grid grid-cols-12 gap-4 gap-y-3">
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-1" class="form-label">Subsidiary Name</label>
+                            <input id="pos-form-1" type="text" class="form-control flex-1" placeholder="">
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-2" class="form-label">Location</label>
+                            <select id="" class="form-select">
+                              <option selected>Select Location</option>
+                              <option>Ghana</option>
+                              <option>Nigeria</option>
+                              <option>Ukraine</option>
+                              <option>Russia</option>
+                          </select>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                            <label for="pos-form-3" class="form-label">Volume of Business</label>
+                            <div class="input-group">
+                              <div id="" class="input-group-text">&#8358;'m</div>
+                              <input type="text" class="form-control" placeholder="" aria-describedby="">
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                          <label for="pos-form-3" class="form-label">UBA SOB</label>
+                          <div class="input-group">
+                              <div id="" class="input-group-text">%</div>
+                            <input type="text" class="form-control" placeholder="example.com" aria-label="Email" aria-describedby="input-group-email">
+                          </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-6">
+                          <label for="" class="form-label">RM/Branch</label>
+                          <input  type="text" class="form-control flex-1" placeholder="">
+                      </div>
+                      <!-- <div class="col-span-12 md:col-span-6">
+                          <label for="pos-form-2" class="form-label">Company Logo</label>
+                          <input type="file" class="mt-2">
+                      </div> -->
+                    </div>
+                    <div class="modal-footer text-right">
+                        <button type="button" data-tw-dismiss="modal" class="btn btn-outline-secondary w-28 mr-1">Cancel</button>
+                        <button type="button" class="btn btn-primary w-32">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
       </div>
         <!-- END: Content -->
         <!-- BEGIN: Dark Mode Switcher-->

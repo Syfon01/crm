@@ -115,3 +115,18 @@ ul li .menu.menu--active .menu__icon{
 #subTable{
   display: none;
 }
+
+table.tab-table{
+  width: 100%!important;
+}
+
+.badge{
+  border-radius: 10px;
+  padding:5px 15px
+}
+.tab-pane.w-full{
+  width: 100%!important;
+}
+.table td.no-pad{
+  padding: 0px;
+}
