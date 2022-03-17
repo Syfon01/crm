@@ -2258,6 +2258,10 @@ select {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .font-medium {
   font-weight: 500;
 }
@@ -2332,13 +2336,13 @@ select {
   --tw-text-opacity: 1;
   color: rgb(var(--color-dark) / var(--tw-text-opacity));
 }
-.text-info {
-  --tw-text-opacity: 1;
-  color: rgb(var(--color-info) / var(--tw-text-opacity));
-}
 .text-slate-800 {
   --tw-text-opacity: 1;
   color: rgb(var(--color-slate-800) / var(--tw-text-opacity));
+}
+.text-info {
+  --tw-text-opacity: 1;
+  color: rgb(var(--color-info) / var(--tw-text-opacity));
 }
 .text-danger {
   --tw-text-opacity: 1;

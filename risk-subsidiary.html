@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="UBA CRM ">
         <meta name="author" content="UBA">
-        <title>Client Engagement - CRM</title>
+        <title>Risk Management - CRM</title>
         <!-- BEGIN: CSS Assets-->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
         <link rel="stylesheet" href="dist/css/app.css" />
@@ -41,13 +41,13 @@
                   </a>
               </li>
               <li>
-                  <a href="./client-engagement.html" class="menu menu--active">
+                  <a href="./client-engagement.html" class="menu">
                       <div class="menu__icon"> <i data-feather="activity"></i> </div>
                       <div class="menu__title"> Client Engagement</div>
                   </a>
               </li>
               <li>
-                  <a href="./risk-management.html" class="menu">
+                  <a href="./risk-management.html" class="menu menu--active">
                       <div class="menu__icon"> <i data-feather="layout"></i> </div>
                       <div class="menu__title">Risk Management </div>
                   </a>
@@ -95,7 +95,7 @@
                 <nav aria-label="breadcrumb" class="h-full mr-auto -intro-x">
                     <ol class="breadcrumb breadcrumb-main">
                         <li class="breadcrumb-item"><a href="#">CRM</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Client Engagement</li>
+                        <li class="breadcrumb-item active" aria-current="page">Risk Management</li>
                     </ol>
                 </nav>
                 <!-- END: Breadcrumb -->
@@ -244,13 +244,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./client-engagement.html" class="top-menu top-menu--active">
+                    <a href="./client-engagement.html" class="top-menu">
                         <div class="top-menu__icon"> <i data-feather="activity"></i> </div>
                         <div class="top-menu__title"> Client Engagement</div>
                     </a>
                 </li>
                 <li>
-                    <a href="./risk-management.html" class="top-menu">
+                    <a href="./risk-management.html" class="top-menu top-menu--active">
                         <div class="top-menu__icon"> <i data-feather="layout"></i> </div>
                         <div class="top-menu__title">Risk Management </div>
                     </a>
@@ -289,7 +289,7 @@
           <div class="flex flex-col items-center justify-between mt-8 intro-y sm:flex-row">
             <div>
               <h2 class="mr-auto text-lg font-medium">
-                Clients Engagement
+                Risk Management
               </h2>
             </div>
             
@@ -349,11 +349,10 @@
                           </div>
                       </div>
                       <div class="p-8 border-t border-slate-200/60 dark:border-darkmode-400">
-                          <a class="flex items-center" href="./view-clients.html"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Activities </a>
-                          <a class="flex items-center mt-5" href="./calling-plans.html"> <i data-feather="box" class="w-4 h-4 mr-2"></i> Calling Plans </a>
-                          <a class="flex items-center mt-5 font-medium text-primary" href="./calling-matrix.html"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> Calling Matrix </a>
-                          <a class="flex items-center mt-5" href="./view-action.html"> <i data-feather="lock" class="w-4 h-4 mr-2"></i> Action Plans </a>
-                       </div>
+                          <a class="flex items-center" href="./view-risk.html"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Overview </a>
+                          <a class="flex items-center mt-5 font-medium text-primary" href="./risk-subsidiary.html"> <i data-feather="box" class="w-4 h-4 mr-2"></i> Subsidiary </a>
+                          <a class="flex items-center mt-5" href="./rating_financials.html"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> Rating and Financials </a>
+                      </div>
                      
                       <!-- <div class="flex p-8 border-t border-slate-200/60 dark:border-darkmode-400">
                         <a href="./add-global.html" class="ml-auto shadow-md btn btn-primary"><i class="w-4 h-4 mr-2 font-bold text-white" data-feather="plus"></i>  Add Global Account</a>
@@ -362,408 +361,51 @@
               </div>
               <!-- END: Profile Menu -->
               <div class="col-span-12 lg:col-span-9 2xl:col-span-9">
+               
                   <div class="intro-y box lg:mt-5">
-                    <div class="px-8 py-5 border-b border-slate-200/60 dark:border-darkmode-400">
+                    <div class="flex flex-col items-center justify-between px-8 py-5 border-b border-slate-200/60 dark:border-darkmode-400 sm:flex-row">
                       <div>
                         <h2 class="mr-auto text-lg font-medium">
-                          Calling Matrix
+                          Subsidiary
                         </h2>
-                        <p class="text-sm text-slate-500">View configured calling matrix below</p>
-
+                        <!-- <p class="text-sm text-slate-500">Account related risk information.</p> -->
                       </div>
-                      <div class="mt-5 intro-y">
-                        <div class="pb-5 overflow-x-auto scrollbar-hidden">
-                          <table class="table tab-table table-bordered"> 
-                              <thead class=""> 
-                                  <tr> 
-                                      <th class="text-center" colspan="3">Key Client Contacts</th>
-                                       <th class="text-center" colspan="4">UBA Responsibility</th> 
-                                  </tr> 
-                              </thead> 
-                              <tbody> 
-                                <tr>
-                                <th colspan="2"></th>
-                                <th colspan="1">
-                                  Role
-                                </th>
-                                <th>
-                                  Board Member
-                                </th>
-                                <th>
-                                  GMD
-                                </th>
-                                <th>
-                                  DMD
-                                </th>
-                                <th>
-                                  GAM
-                                </th>
-                                </tr>
-                                <tr>
-                                  <td colspan="2">
-                                    fffffffffffffffffffffffffffffffffffff
-                                  </td>
-                                  <td class="no-pad">
-                                    <table class="table">
-                                      <tr>
-                                        <td>Decison Maker</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Influencer</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Champion</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Recommenders</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Others</td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                  <td class="no-pad">
-                                    <table class="table">
-                                      <tr>
-                                        <td>2</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                  <td class="no-pad">
-                                    <table class="table">
-                                      <tr>
-                                        <td>2</td>
-                                      </tr>
-                                      <tr>
-                                        <td>1</td>
-                                      </tr>
-                                      <tr>
-                                        <td>2</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                  <td class="no-pad">
-                                    <table class="table">
-                                      <tr>
-                                        <td>4</td>
-                                      </tr>
-                                      <tr>
-                                        <td>8</td>
-                                      </tr>
-                                      <tr>
-                                        <td>4</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                  <td class="no-pad">
-                                    <table class="table">
-                                      <tr>
-                                        <td>6</td>
-                                      </tr>
-                                      <tr>
-                                        <td>12</td>
-                                      </tr>
-                                      <tr>
-                                        <td>12</td>
-                                      </tr>
-                                      <tr>
-                                        <td>24</td>
-                                      </tr>
-                                      <tr>
-                                        <td>12</td>
-                                      </tr>
-                                    </table>
-                                  </td>
-
-                                </tr>
-                                <tr>
-                                  <td colspan="2">
-                                    fffffffffffffffffffffffffffffffffffff
-                                  </td>
-                                  <td class="no-pad">
-                                    <table class="table">
-                                      <tr>
-                                        <td>Decison Maker</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Influencer</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Champion</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Recommenders</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Others</td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                  <td class="no-pad">
-                                    <table class="table">
-                                      <tr>
-                                        <td>2</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                  <td class="no-pad">
-                                    <table class="table">
-                                      <tr>
-                                        <td>2</td>
-                                      </tr>
-                                      <tr>
-                                        <td>1</td>
-                                      </tr>
-                                      <tr>
-                                        <td>2</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                  <td class="no-pad">
-                                    <table class="table">
-                                      <tr>
-                                        <td>4</td>
-                                      </tr>
-                                      <tr>
-                                        <td>8</td>
-                                      </tr>
-                                      <tr>
-                                        <td>4</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                      <tr>
-                                        <td>-</td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                  <td class="no-pad">
-                                    <table class="table">
-                                      <tr>
-                                        <td>6</td>
-                                      </tr>
-                                      <tr>
-                                        <td>12</td>
-                                      </tr>
-                                      <tr>
-                                        <td>12</td>
-                                      </tr>
-                                      <tr>
-                                        <td>24</td>
-                                      </tr>
-                                      <tr>
-                                        <td>12</td>
-                                      </tr>
-                                    </table>
-                                  </td>
-
-                                </tr>
-                                                              
-                              </tbody>
-                          </table> 
-                      </div>
-                    </div>
+                      
+                      
                   </div>
-
+                  <div class="p-5">
+                    <div class="pb-5 overflow-x-auto scrollbar-hidden">
+                      <table id="table_id" class="display">
+                          <thead>
+                              <tr>
+                                  <th class="text-center">Subsidiary</th>
+                                  <th class="text-center">Approved Limit</th>
+                                  <th class="text-center">Utilized Amount</th>
+                                  <th class="text-center">Rating</th>
+                                  <th class="text-center"></th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  
+                                  <td class="text-center">CY Sub</td>
+                                  <td class="text-center">5,000,000</td>
+                                  <td class="text-center">5,568,000</td>
+                                  <td class="text-center">Good</td>
+                                  <td class="text-center ">
+                                    <a href="./single-sub.html" class="w-20 btn btn-sm btn-outline-primary">View</a>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                </div>
              </div>
                   
-                  <!--  -->
+                  <!-- END: Personal Information -->
               </div>
           </div>
-          <!-- task modal  -->
-          <div id="taskModal" class="modal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="mr-auto text-base font-medium">
-                            Create Task
-                        </h2>
-                    </div>
-                    <div class="grid grid-cols-12 gap-4 modal-body gap-y-3">
-                        <div class="col-span-12">
-                            <label for="pos-form-1" class="form-label">Task Description</label>
-                            <textarea name="" id="" class="form-control" rows="3"></textarea>
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-1" class="form-label">Activity Owner</label>
-                            <select data-placeholder="Search Activity Owner" class="w-full tom-select">
-                                <option value="">Search</option>
-                                <option value="1">Lewis Ugege</option>
-                                <option value="2">Ayomide Boss</option>
-                                <option value="3">Chied Alhaji Kunle</option>
-                            </select>
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-2" class="form-label">Priority</label>
-                            <select id="" class="form-select">
-                              <option selected>Select...</option>
-                              <option>Low</option>
-                              <option>Average</option>
-                              <option>High</option>
-                          </select>
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-3" class="form-label">Due Date</label>
-                            <input type="date" class="form-control" placeholder="" aria-describedby="">
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-3" class="form-label">Time</label>
-                            <input type="time" class="form-control" placeholder="" aria-describedby="">
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-3" class="form-label">Reminder</label>
-                            <input type="date" class="form-control" placeholder="" aria-describedby="">
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-3" class="form-label">Repeat</label>
-                            <select id="" class="form-select">
-                                <option selected>Select</option>
-                                <option>Daily</option>
-                                <option>Weekly</option>
-                                <option>Monthly</option>
-                                <option>Yearly</option>
-                                <option>Never</option>
-                            </select>
-                        </div>
-                       
-                    </div>
-                    <div class="text-right modal-footer">
-                        <button type="button" data-tw-dismiss="modal" class="mr-1 btn btn-outline-secondary w-28">Cancel</button>
-                        <button type="button" class="btn btn-primary w-28">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- meeting modal  -->
-        <div id="meetingModal" class="modal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="mr-auto text-base font-medium">
-                            Create Meeting/ Calls
-                        </h2>
-                    </div>
-                    <div class="grid grid-cols-12 gap-4 modal-body gap-y-3">
-                        <div class="col-span-12">
-                            <label for="pos-form-1" class="form-label">Meeting Subject / Description</label>
-                            <textarea name="" id="" class="form-control" rows="3"></textarea>
-                        </div>
-                        <div class="col-span-12">
-                            <label for="pos-form-1" class="form-label">Meeting Type</label>
-                            <select id="" class="form-select">
-                                <option selected>Select One</option>
-                                <option>Check-ins</option>
-                                <option>Courtesy Calls</option>
-                                <option>Follow Up</option>
-                                <option>Visit</option>
-                                <option>Routine Business Calls</option>
-                                <option>Serviuce Failure</option>
-                                <option>Strategic Plan Business Meeting </option>
-                            </select>
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-3" class="form-label">Start Date</label>
-                            <input type="date" class="form-control" placeholder="" aria-describedby="">
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-3" class="form-label">Time</label>
-                            <input type="time" class="form-control" placeholder="" aria-describedby="">
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-3" class="form-label">End Date</label>
-                            <input type="date" class="form-control" placeholder="" aria-describedby="">
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-3" class="form-label">Time</label>
-                            <input type="time" class="form-control" placeholder="" aria-describedby="">
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-1" class="form-label">Participant</label>
-                            <select data-placeholder="Search participant" class="w-full tom-select">
-                                <option value="">Search</option>
-                                <option value="1">Lewis Ugege</option>
-                                <option value="2">Ayomide Boss</option>
-                                <option value="3">Chied Alhaji Kunle</option>
-                            </select>
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-2" class="form-label">Priority</label>
-                            <select id="" class="form-select">
-                              <option selected>Select...</option>
-                              <option>Low</option>
-                              <option>Average</option>
-                              <option>High</option>
-                          </select>
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-3" class="form-label">Reminder</label>
-                            <input type="date" class="form-control" placeholder="" aria-describedby="">
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-3" class="form-label">Repeat</label>
-                            <select id="" class="form-select">
-                                <option selected>Select</option>
-                                <option>Daily</option>
-                                <option>Weekly</option>
-                                <option>Monthly</option>
-                                <option>Yearly</option>
-                                <option>Never</option>
-                            </select>
-                        </div>
-                       
-                    </div>
-                    <div class="text-right modal-footer">
-                        <button type="button" data-tw-dismiss="modal" class="mr-1 btn btn-outline-secondary w-28">Cancel</button>
-                        <button type="button" class="btn btn-primary w-28">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+         
       </div>
         <!-- END: Content -->
         <!-- BEGIN: Dark Mode Switcher-->
