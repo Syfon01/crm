@@ -130,3 +130,7 @@ table.tab-table{
 .table td.no-pad{
   padding: 0px;
 }
+.small-icon{
+  width:14px;
+  height:14px;
+}

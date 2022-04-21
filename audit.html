@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="UBA CRM ">
         <meta name="author" content="UBA">
-        <title>Risk Management - CRM</title>
+        <title>Audit Log - CRM</title>
         <!-- BEGIN: CSS Assets-->
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
         <link rel="stylesheet" href="dist/css/app.css" />
@@ -47,7 +47,7 @@
                   </a>
               </li>
               <li>
-                  <a href="./risk-management.html" class="menu menu--active">
+                  <a href="./risk-management.html" class="menu">
                       <div class="menu__icon"> <i data-feather="layout"></i> </div>
                       <div class="menu__title">Risk Management </div>
                   </a>
@@ -65,7 +65,7 @@
                   </a>
               </li>
               <li>
-                  <a href="javascript:;" class="menu">
+                  <a href="javascript:;" class="menu menu--active">
                       <div class="menu__icon"> <i data-feather="hard-drive"></i> </div>
                       <div class="menu__title"> More <i data-feather="chevron-down" class="top-menu__sub-icon"></i> </div>
                   </a>
@@ -95,7 +95,7 @@
                 <nav aria-label="breadcrumb" class="h-full mr-auto -intro-x">
                     <ol class="breadcrumb breadcrumb-main">
                         <li class="breadcrumb-item"><a href="#">CRM</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Risk Management</li>
+                        <li class="breadcrumb-item active" aria-current="page">Audit Log</li>
                     </ol>
                 </nav>
                 <!-- END: Breadcrumb -->
@@ -250,7 +250,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./risk-management.html" class="top-menu top-menu--active">
+                    <a href="./risk-management.html" class="top-menu">
                         <div class="top-menu__icon"> <i data-feather="layout"></i> </div>
                         <div class="top-menu__title">Risk Management </div>
                     </a>
@@ -268,7 +268,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:;" class="top-menu">
+                    <a href="javascript:;" class="top-menu top-menu--active">
                         <div class="top-menu__icon"> <i data-feather="hard-drive"></i> </div>
                         <div class="top-menu__title"> More <i data-feather="chevron-down" class="top-menu__sub-icon"></i> </div>
                     </a>
@@ -281,174 +281,91 @@
                         </li>
                     </ul>
                 </li>
-            </ul>
+            </ul>  
         </nav>
         <!-- END: Top Menu -->
         <!-- BEGIN: Content -->
         <div class="content">
           <div class="flex flex-col items-center justify-between mt-8 intro-y sm:flex-row">
-            <div>
-              <h2 class="mr-auto text-lg font-medium">
-                Risk Management
-              </h2>
-            </div>
-        </div>
-       
-          <div class="grid grid-cols-12 gap-6">
-              <!-- BEGIN: Profile Menu -->
-              <div class="flex flex-col-reverse col-span-12 lg:col-span-3 2xl:col-span-3 lg:block">
-                  <div class="mt-5 intro-y box">
-                      <div class="relative flex items-center p-5">
-                          <div class="w-12 h-12 image-fit">
-                              <img alt="profile-photo" class="rounded-full" src="dist/images/profile-1.jpg">
-                          </div>
-                          <div class="ml-4 mr-auto">
-                              <div class="text-base font-medium">British Airways</div>
-                              <div class="text-slate-500">Travel  & Logistics</div>
-                          </div>
-                          <div class="dropdown">
-                              <a class="block w-5 h-5 dropdown-toggle" href="javascript:;" aria-expanded="false" data-tw-toggle="dropdown"> <i data-feather="more-horizontal" class="w-5 h-5 text-slate-500"></i> </a>
-                              <div class="w-56 dropdown-menu">
-                                  <ul class="dropdown-content">
-                                      <li>
-                                          <h6 class="dropdown-header">
-                                              Export Options
-                                          </h6>
-                                      </li>
-                                      <li>
-                                          <hr class="dropdown-divider">
-                                      </li>
-                                      <li>
-                                          <a href="" class="dropdown-item"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> English </a>
-                                      </li>
-                                      <li>
-                                          <a href="" class="dropdown-item">
-                                              <i data-feather="box" class="w-4 h-4 mr-2"></i> Indonesia 
-                                              <div class="px-1 ml-auto text-xs text-white rounded-full bg-danger">10</div>
-                                          </a>
-                                      </li>
-                                      <li>
-                                          <a href="" class="dropdown-item"> <i data-feather="layout" class="w-4 h-4 mr-2"></i> English </a>
-                                      </li>
-                                      <li>
-                                          <a href="" class="dropdown-item"> <i data-feather="sidebar" class="w-4 h-4 mr-2"></i> Indonesia </a>
-                                      </li>
-                                      <li>
-                                          <hr class="dropdown-divider">
-                                      </li>
-                                      <li>
-                                          <div class="flex p-1">
-                                              <button type="button" class="px-2 py-1 btn btn-primary">Settings</button>
-                                              <button type="button" class="px-2 py-1 ml-auto btn btn-secondary">View Profile</button>
-                                          </div>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="p-8 border-t border-slate-200/60 dark:border-darkmode-400">
-                          <a class="flex items-center" href="./view-risk.html"> <i data-feather="user" class="w-4 h-4 mr-2"></i> Overview </a>
-                          <a class="flex items-center mt-5" href="./risk-subsidiary.html"> <i data-feather="box" class="w-4 h-4 mr-2"></i> Subsidiary </a>
-                          <a class="flex items-center mt-5 font-medium text-primary" href=".rating_financials.html"> <i data-feather="activity" class="w-4 h-4 mr-2"></i> Rating and Financials </a>
-                      </div>
-                     
-                      <!-- <div class="flex p-8 border-t border-slate-200/60 dark:border-darkmode-400">
-                        <a href="./add-global.html" class="ml-auto shadow-md btn btn-primary"><i class="w-4 h-4 mr-2 font-bold text-white" data-feather="plus"></i>  Add Global Account</a>
-                      </div> -->
-                  </div>
+              <div>
+                <h2 class="mr-auto text-lg font-medium">
+                  Audit Log
+                </h2>
+                <p class="text-sm text-slate-500">Track all user activities on the CRM</p>
               </div>
-              <!-- END: Profile Menu -->
-              <div class="col-span-12 lg:col-span-9 2xl:col-span-9">
-               
-                  <div class="intro-y box lg:mt-5">
-                    <div class="flex items-center justify-between px-8 py-5 border-b border-slate-200/60 dark:border-darkmode-400">
-                      <div>
-                        <h2 class="mr-auto text-base font-medium">
-                          Rating and Financials
-                      </h2>
-                      </div>
-                      
-                      <div class="flex border-t border-slate-200/60 dark:border-darkmode-400">
-                        <button class="ml-auto shadow-md btn btn-primary"  data-tw-toggle="modal" data-tw-target="#addRFModal"><i class="w-4 h-4 mr-2 font-bold text-white" data-feather="plus"></i>  Add New</button>
-                      </div>
-                  </div>   
-                  <div class="p-5">
-                     <div class="pb-5 mt-1 overflow-x-auto scrollbar-hidden">
-                       <table id="table_id" class="display">
-                           <thead>
-                               <tr>
-                                   <th class="text-center">Date</th>
-                                   <th class="text-center">File</th>
-                                   <th class="text-center">Rating</th>
-                                   <th class="text-center"></th>
-                               </tr>
-                           </thead>
-                           <tbody>
-                               <tr>
-                                   
-                                   <td class="text-center">23 March, 2020</td>
-                                   <td class="text-center">Financials 2</td>
-                                   <td class="text-center">Good</td>
-                                   <td class="text-center ">
-                                     <button class="w-20 btn btn-sm btn-outline-primary">Download</button>
-                                   </td>
-                               </tr>
-                           </tbody>
-                       </table>
-                     </div>
-                </div>
-             </div>
-                  
-                  <!-- END: Personal Information -->
+              
+              <!-- <div class="flex w-full mt-4 sm:w-auto sm:mt-0">
+                  <a href="./add-engagement.html" class="shadow-md btn btn-primary"><i class="w-4 h-4 mr-2 font-bold text-white" data-feather="plus"></i>  Add Global Account</a>
+              </div> -->
+          </div>
+          
+          <!-- BEGIN: HTML Table Data -->
+          <div class="p-5 mt-5 intro-y box">
+              <div class="pb-5 overflow-x-auto scrollbar-hidden">
+                <table id="table_id" class="display table-others">
+                    <thead>
+                        <tr>
+                            <th class="">Users</th>
+                            <th>Activity</th>
+                            <th >Action</th>
+                            <th >Module</th>
+                            <th >Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="">
+                              Gafar Alhaji
+                            </td>
+                            <td class="">
+                              <span class="text-white rounded-lg badge bg-success">Created</span>
+                            </td>
+                            <td class="">Removed a role from a user</td>
+                            <td class="">User</td>
+
+                            <td>
+                              Apr 13, 2022<br>
+                              <span class="text-xs text-slate-500"> 2:24:08 PM </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="">
+                              Temitope Bello
+                            </td>
+                            <td class="">
+                              <span class="text-white rounded-lg badge bg-danger">Deleted</span>
+                            </td>
+                            <td class="">Removed permission from a user</td>
+                            <td class="">User</td>
+
+                            <td>
+                              Apr 13, 2022<br>
+                              <span class="text-xs text-slate-500"> 2:24:08 PM </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="">
+                              Temitope Bello
+                            </td>
+                            <td class="">
+                              <span class="text-white rounded-lg badge bg-info">Updated</span>
+                            </td>
+                            <td class="">Updated company's relationship status in country</td>
+                            <td class="">Company</td>
+
+                            <td>
+                              Apr 13, 2022<br>
+                              <span class="text-xs text-slate-500"> 2:24:08 PM </span>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
               </div>
           </div>
-
-          
-           <!--Add Rating  modal  -->
-           <div id="addRFModal" class="modal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="pt-5 modal-header">
-                        <h2 class="text-base text-lg font-medium">Add Rating and Financials</h2>
-                    </div>
-                    <div class="grid grid-cols-12 gap-4 modal-body gap-y-3">
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-1" class="form-label">Financials</label>
-                            <input id="pos-form-1" type="file" class="" placeholder="">
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-2" class="form-label">Financial Date</label>
-                            <input type="date" name="" class="form-control" id="">
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <label for="pos-form-3" class="form-label">Rating</label>
-                            <select id="" class="form-select">
-                              <option selected></option>
-                              <option>Good</option>
-                              <option>Bad</option>
-                          </select>
-                        </div>
-                        <div class="col-span-12 md:col-span-6">
-                          <label for="pos-form-2" class="form-label">Rating Date</label>
-                          <input type="date" name="" class="form-control" id="">
-                      </div>                        
-                    </div> 
-                    <div class="text-right modal-footer">
-                        <button type="button" data-tw-dismiss="modal" class="mr-1 btn btn-outline-secondary w-28">Cancel</button>
-                        <button type="button" class="w-32 btn btn-primary">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+          <!-- END: HTML Table Data -->
       </div>
-        <!-- END: Content -->
-        <!-- BEGIN: Dark Mode Switcher-->
-        <!-- <div data-url="top-menu-dark-dashboard-overview-1.html" class="fixed bottom-0 right-0 z-50 flex items-center justify-center w-40 h-12 mb-10 mr-10 border rounded-full shadow-md cursor-pointer dark-mode-switcher box">
-            <div class="mr-4 text-slate-600 dark:text-slate-200">Dark Mode</div>
-            <div class="border dark-mode-switcher__toggle"></div>
-        </div> -->
-        <!-- END: Dark Mode Switcher-->
+        <!-- END: Content -->  
         
         <!-- BEGIN: JS Assets-->
         <script src="dist/js/app.js"></script>
@@ -464,19 +381,12 @@
                 //     "bSortable": false,
                 //     "aTargets": [-1]
                 // }],
-                "searching": false,
+                "searching": true,
                 "lengthChange": false,
                 "bInfo": false,
                 "bPaginate":false,
                 });
-  
-            $('a[data-tw-toggle="tab"]').on('shown.tw.tab', function (e) {
-                $(".display").resize()
-              $('.display:visible').each( function(e) {
-                $(this).DataTable().columns.adjust().responsive.recalc();
-              });
             });
-          } );
         </script>
         <!-- END: JS Assets-->
     </body>
